@@ -3,14 +3,14 @@ body{
 }
 .div-containerUpperSectionRender{
 	width: 100%;
-	height: 300px;
+	height: 10%;
 	margin: 0;
 	display: grid;
 	grid-template-columns: 100%;
 	grid-template-rows: 300px;
 }
 .div-containerUpperSectionRender_img{
-	filter: blur(3px) brightness(0.9);
+	filter: blur(3px) brightness(1);
 	width: 100%;
 	height: 100%;
 	display: grid;
@@ -50,8 +50,12 @@ body{
 	background-color: red;
 	color: #fff;
 	display: grid;
+	grid-column: 1/2;
+	grid-row: 1/2;
 	grid-template-columns: repeat(2,12%);
-	grid-template-rows: 80%; 
+	grid-template-rows: 100%;
+	position: relative;
+	z-index: 40;
 }
 .div-containerUpperSectionRender_header_nav_div_button_p-burgerText{
 	width: max-content;
@@ -65,4 +69,31 @@ body{
 	font-size: 25px;
 	margin: 0;
 	padding: 12px 10px 10px 10px;
+}
+.div-containerUpperSectionRender_header_nav_div_div{
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-column: 1/2;
+	grid-row: 1/2;
+}
+.div-containerUpperSectionRender_header_nav_div_div_button-open1{
+	background-color: blue;
+	color: #fff;
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: repeat(2,12%);
+	grid-template-rows: repeat(2,100%)
+	overflow: scroll;
+	overflow: hidden;
+	position: relative;
+	z-index: 50;
+}
+.div-containerUpperSectionRender_header_nav_div_div_button_ul-positionColumn{
+	
+}
+.div-containerUpperSectionRender_header_nav_div_div_button-open1:focus{
+	width: 100%;
+	height: 500%;
 };
