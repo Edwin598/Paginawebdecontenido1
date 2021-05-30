@@ -26,7 +26,7 @@ body{
 	grid-row: 1/2;
 }
 .div-containerUpperSectionRender_header-glass{
-	background-color: #0095;
+	background-color: #0c0c2299;
 	width: 100%;
 	height: 100%;
 	grid-column: 1/2;
@@ -40,7 +40,7 @@ body{
 /*-------------------------upperSectionNavbar------------------------------*/
 
 .div-containerUpperSectionRender_header_nav{
-	background-color:  #0017;
+	background-color: #32314eaa;
 	width: 100%;
 	height: 58px;
 	position: fixed;
@@ -62,7 +62,7 @@ body{
 	height: 58px;
 	border: 0;
 	border-radius: 5px;
-	background-color: #444;
+	background-color: #13142a;
 	color: #fff;
 	display: grid;
 	grid-column: 1/2;
@@ -93,7 +93,7 @@ body{
 	grid-row: 1/2;
 }
 .div-containerUpperSectionRender_header_nav_div_div_button-open1{
-	background-color: #555;
+	background-color: #13142a;
 	color: #fff;
 	border: 0;
 	border-radius: 5px;
@@ -124,7 +124,7 @@ body{
 	text-decoration: none;
 }
 .div-containerUpperSectionRender_header_nav_div_div_button_ul_li_a:visited{
-	color: #aaa;
+	color: #8a87a9;
 	text-decoration: none;
 }
 .div-containerUpperSectionRender_header_nav_div_div_button-open1:hover{
@@ -134,7 +134,7 @@ body{
 	height: 7.4%;
 }
 .div-containerUpperSectionRender_header_nav_div_div_button-open1:focus{
-	background-color: #444;
+	background-color: #32314e;
 	transition-duration: 0.3s;
 	width: 400px;
 	height: 100%;
@@ -157,7 +157,7 @@ body{
 	height: 58px;
 	border: 0;
 	border-radius: 5px;
-	background-color: #555;
+	background-color: #13142a;
 	color: #fff;
 	display: grid;
 	grid-column: 1/2;
@@ -170,7 +170,7 @@ body{
 .div-containerUpperSectionRender_header_nav_div_button_p-pointText{
 	width: 5px;
 	height: 50px;
-	font-size: 30px;
+	font-size: 35px;
 	margin: 0;
 	padding: 0;
 	display: grid;
@@ -186,7 +186,7 @@ body{
 	justify-items: end;
 }
 .div-containerUpperSectionRender_header_nav_div_div_button-open2{
-	background-color: #555;
+	background-color: #13142a;
 	color: #fff;
 	border: 0;
 	border-radius: 5px;
@@ -205,7 +205,7 @@ body{
 .div-containerUpperSectionRender_header_nav_div_button_p-pointText2{
 	width: 100%;
 	height: 100%;
-	font-size: 30px;
+	font-size: 35px;
 	margin: 0;
 	padding: 0;
 	display: grid;
@@ -256,8 +256,17 @@ body{
 	height: 100%;
 	display: grid;
 	grid-row: 1/2;
-	grid-template-columns: repeat(2,114px);
-	grid-template-rows: repeat(3,80px);
+	grid-template-columns: repeat(2,1fr);
+	grid-template-rows: repeat(4,25%);
+}
+.div-containerUpperSectionRender_header_div_div_div-contactInfo{
+	width: minmax(min-content,max-content);
+	color: #fff;
+	font-size: 20px;
+	display: grid;
+	grid-column: 1/3;
+	position: relative;
+	left: 5%;
 }
 .div-containerUpperSectionRender_header_div_div_div-contactsFacebook{
 	background-color: #fff;
@@ -265,18 +274,21 @@ body{
 	border-radius: 0 25px;
 	color: #000;
 	font-size: 16px;
-	width: 114px;
-	height: 80px;
+	width: 57px;
+	height: 40px;
 	display: grid;
+	justify-self: center; 
+	align-self: center;
 }
 .div-containerUpperSectionRender_header_div_div_div_div-facebook{
-	width: 114px;
-	height: 80px;
+	width: 57px;
+	height: 40px;
 	position: relative;
 	z-index: 1;
 	border-radius: 0 25px;
+	color: #00b;
 	background-color: #00b;/*--------|-------|---------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|*/
-	clip-path: 		polygon(55% 20%, 45% 20%, 42% 21%, 39% 24%, 37% 28%, 37% 31%, 37% 42%, 32% 42%, 32% 52%, 37% 52%, 37% 75%, 47% 75%, 47% 52%, 55% 52%, 55% 42%, 47% 42%, 47% 34%, 48% 31%, 55% 31%);
+	clip-path: 		polygon(59% 20%, 49% 20%, 48% 21%, 43% 24%, 41% 28%, 41% 31%, 41% 42%, 36% 42%, 36% 52%, 41% 52%, 41% 75%, 51% 75%, 51% 52%, 59% 52%, 59% 42%, 51% 42%, 51% 34%, 52% 31%, 59% 31%);
 }
 .div-containerUpperSectionRender_header_div_div_div_div-facebook:hover{
 	border: 1px solid #000;
@@ -288,8 +300,8 @@ body{
 	height: 120px;
 }
 .div-containerUpperSectionRender_header_div_div_div-contactsGithub{
-	width: 114px;
-	height: 80px;
+	width: 57px;
+	height: 40px;
 	display: grid;
 	position: relative;
 	z-index: 3;
@@ -297,12 +309,15 @@ body{
 	border: 1px solid #999;
 	border-radius: 25px 0;
 	font-size: 16px;
+	justify-self: start; 
+	align-self: center;
 }
 .div-containerUpperSectionRender_header_div_div_div_div-github{
 	border: 1px solid #000;
 	background-color: #fff;
-	width: 114px;
-	height: 80px;
+	color: #fff;
+	width: 57px;
+	height: 40px;
 	position: sticky;
 	z-index: 30;
 	border-radius: 25px 0;
@@ -319,20 +334,23 @@ body{
 	height: 120px;
 }
 .div-containerUpperSectionRender_header_div_div_div-contactsGitlab{
-	width: 114px;
-	height: 80px;	
+	width: 57px;
+	height: 40px;	
 	display: grid;
 	background-color: #222;
 	color: #ddd;
 	border: 1px solid #999;
 	border-radius: 0 25px;
 	font-size: 16px;
+	justify-self: center; 
+	align-self: center;
 }
 .div-containerUpperSectionRender_header_div_div_div_div-gitlab{
 	border: 1px solid #000;
 	background-color: #b50;
-	width: 114px;
-	height: 80px;
+	color: #b50;
+	width: 57px;
+	height: 40px;
 	position: sticky;
 	z-index: 2;
 	border-radius: 0 25px;
@@ -349,8 +367,8 @@ body{
 	height: 120px;
 }
 .div-containerUpperSectionRender_header_div_div_div-contactsWhatsapp{
-	width: 114px;
-	height: 80px;
+	width: 57px;
+	height: 40px;
 	display: grid;
 	position: relative;
 	z-index: 2;
@@ -359,14 +377,17 @@ body{
 	border: 1px solid #999;
 	border-radius: 25px 0;
 	font-size: 16px;
+	justify-self: start; 
+	align-self: center;
 }
 .div-containerUpperSectionRender_header_div_div_div_div-whatsapp{
 	border: 1px solid #000;
 	background-color: #0a0;
+	color: #0a0;
 	position: sticky;
 	z-index: 20;
-	width: 114px;
-	height: 80px;
+	width: 57px;
+	height: 40px;
 	border-radius: 25px 0;
 	clip-path: polygon(7% 92%, 29% 86%, 35% 88.9%, 39% 90%, 45% 91%, 51% 90.9%, 57% 90%, 62% 89%, 67% 87%, 71% 85%, 76% 81.7%, 80% 78%, 83% 74.5%, 86% 70%, 88% 66.8%, 90% 61.7%, 91% 57%, 92% 52%, 92% 46%, 91% 39%, 89% 33%, 86% 28%, 82% 22%, 78% 17.5%, 72% 12.7%, 67% 10%, 61% 8%, 54% 7%, 48% 7%, 41% 8%, 35% 10%, 29% 12.5%, 23% 16.5%, 19% 20.2%, 15% 25%, 11% 32%, 9% 38%, 8.5% 42%, 8% 48%, 8% 53%, 8.7% 58%, 10% 63%, 12% 68%, 13% 71%, 36% 55%, 32% 50%, 29% 44%, 28% 40%, 29% 36%, 30% 33%, 33% 30%, 34% 30%, 38% 30%, 43% 40%, 43% 42%, 39% 46%, 41% 49%, 45% 54%, 51% 58%, 55% 60%, 56% 59%, 60% 54%, 61% 54%, 71% 59%, 71% 60%, 70% 64%, 64% 69%, 60% 69%, 54% 68%, 48% 65%, 43% 62%, 38% 58%, 36% 55%, 13% 71%);
 }
@@ -381,22 +402,25 @@ body{
 	height: 120px;
 }
 .div-containerUpperSectionRender_header_div_div_div-contactsLinkedin{
-	width: 114px;
-	height: 80px;
+	width: 57px;
+	height: 40px;
 	display: grid;
 	background-color: #00a;
 	color: #000;
 	border: 1px solid #999;
 	border-radius: 0 25px;
 	font-size: 16px;
+	justify-self: center; 
+	align-self: center;
 }
 .div-containerUpperSectionRender_header_div_div_div_div-linkedin{
 	border: 1px solid #000;
 	background-color: #fff;
+	color: #fff;
 	position: sticky;
 	z-index: 3;
-	width: 114px;
-	height: 80px;
+	width: 57px;
+	height: 40px;
 	border-radius: 0 25px;
 	clip-path: polygon(30% 26%, 30.8% 23%, 30.6% 20%, 29% 16%, 27% 14%, 22.8% 13%, 18% 14%, 16% 15.5%, 14.3% 19%, 14% 23%, 14.7% 26%, 17% 29%, 19% 30%, 22% 31%, 27% 30%, 28% 29.5%, 30% 38%, 15% 38%, 15% 84%, 49% 84.9%, 53% 85%, 54% 56%, 55.8% 52%, 58% 50%, 62% 49.4%, 65% 50%, 68% 53%, 69% 55.3%, 69.8% 59%, 70% 85%, 85% 85%, 84.7% 53%, 83.8% 49%, 81.8% 44%, 79% 40%, 75% 37.5%, 69% 36%, 64% 36.5%, 59% 38.5%, 56% 40%, 53% 42%, 53% 38%, 39% 38%, 39% 84.7%, 29% 84.4%, 30% 38%, 28% 29.3%);
 }
@@ -411,8 +435,8 @@ body{
 	height: 120px;
 }
 .div-containerUpperSectionRender_header_div_div_div-contactsEmail{
-	width: 114px;
-	height: 80px;
+	width: 57px;
+	height: 40px;
 	display: grid;
 	position: relative;
 	z-index: 1;
@@ -421,15 +445,18 @@ body{
 	border: 1px solid #999;
 	border-radius: 25px 0;
 	font-size: 16px;
+	justify-self: start; 
+	align-self: center;
 }
 .div-containerUpperSectionRender_header_div_div_div_div-email{
 	border: 1px solid #000;
 	background-color: #fff;
+	color: #fff;
 	position: sticky;
 	z-index: 10;
-	width: 114px;
-	height: 80px;
-	border-radius: 0 25px;
+	width: 57px;
+	height: 40px;
+	border-radius: 25px 0;
 	clip-path: polygon(90% 21%, 9% 21%, 9% 70%, 9% 75%, 91% 75%, 91% 26%, 63% 48%, 91% 70%, 91% 75%, 61% 50%, 50% 57%, 39% 50%, 9% 75%, 9% 71%, 37% 48%, 9% 25%, 9% 21%, 50% 54%, 91% 21%);
 }
 .div-containerUpperSectionRender_header_div_div_div_div-email:hover{
