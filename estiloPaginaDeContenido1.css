@@ -212,11 +212,11 @@ body{
 	height: 100%;
 	font-size: 35px;
 	margin: 0;
-	padding: 0;
+	padding: 0 0 0 5px;
 	display: grid;
 	grid-column: 1/2;
 	grid-row: 1/2;
-	justify-items: end;
+	justify-items: start;
 }
 .div-containerUpperSectionRender_header_nav_div_div_button_ol-positionRow{
 	width: 100%;
@@ -240,10 +240,10 @@ body{
 	height: 100%;
 }
 .div-containerUpperSectionRender_header_nav_div_div_button-open2:focus{
-	background-color: #444;
+	background-color: #333;
 	transition-duration: 0.3s;
-	width: 400px;
-	height: 100%;
+	width: 100%;
+	height: 100%;		/*Con mediaquerys se tiene que poder ver el overflow ya que con algunas resoluciones no se alcanza a ver todo el contenido*/
 	position: relative;
 	z-index: 60;
 }
@@ -476,7 +476,1219 @@ body{
 }
 
 .div-containerUpperSectionRender_header_div_div-animation{
+	width: 90%;
+	height: 100%;
 	border: 2px solid #555;
+	animation-name: movimientoDeCubo;
+	animation-duration: 5s;
+	animation-direction: alternate-reverse;
+	animation-iteration-count: infinite;
+}
+@keyframes movimientoDeCubo{
+	0.3%{
+		background-image: url(cubo/0001.png);
+		background-size: cover;
+	}
+	0.6%{
+		background-image: url(cubo/0002.png);
+		background-size: cover;
+	}
+	0.9%{
+		background-image: url(cubo/0003.png);
+		background-size: cover;
+	}
+	1.3%{
+		background-image: url(cubo/0004.png);
+		background-size: cover;
+	}
+	1.6%{
+		background-image: url(cubo/0005.png);
+		background-size: cover;
+	}
+	1.9%{
+		background-image: url(cubo/0006.png);
+		background-size: cover;
+	}
+	2.3%{
+		background-image: url(cubo/0007.png);
+		background-size: cover;
+	}
+	2.6%{
+		background-image: url(cubo/0008.png);
+		background-size: cover;
+	}
+	2.9%{
+		background-image: url(cubo/0009.png);
+		background-size: cover;
+	}
+	3.3%{
+		background-image: url(cubo/0010.png);
+		background-size: cover;
+	}
+	3.6%{
+		background-image: url(cubo/0011.png);
+		background-size: cover;
+	}
+	3.9%{
+		background-image: url(cubo/0012.png);
+		background-size: cover;
+	}
+	4.3%{
+		background-image: url(cubo/00013.png);
+		background-size: cover;
+	}
+	4.6%{
+		background-image: url(cubo/0014.png);
+		background-size: cover;
+	}
+	4.9%{
+		background-image: url(cubo/0015.png);
+		background-size: cover;
+	}
+	5.3%{
+		background-image: url(cubo/0016.png);
+		background-size: cover;
+	}
+	5.6%{
+		background-image: url(cubo/0017.png);
+		background-size: cover;
+	}
+	5.9%{
+		background-image: url(cubo/0018.png);
+		background-size: cover;
+	}
+	6.3%{
+		background-image: url(cubo/0019.png);
+		background-size: cover;
+	}
+	6.6%{
+		background-image: url(cubo/0020.png);
+		background-size: cover;
+	}
+	6.9%{
+		background-image: url(cubo/0021.png);
+		background-size: cover;
+	}
+	7.3%{
+		background-image: url(cubo/0022.png);
+		background-size: cover;
+	}
+	7.6%{
+		background-image: url(cubo/0023.png);
+		background-size: cover;
+	}
+	7.9%{
+		background-image: url(cubo/0024.png);
+		background-size: cover;
+	}
+	8.3%{
+		background-image: url(cubo/0025.png);
+		background-size: cover;
+	}
+	8.6%{
+		background-image: url(cubo/0026.png);
+		background-size: cover;
+	}
+	8.9%{
+		background-image: url(cubo/0027.png);
+		background-size: cover;
+	}
+	9.3%{
+		background-image: url(cubo/0028.png);
+		background-size: cover;
+	}
+	9.6%{
+		background-image: url(cubo/0029.png);
+		background-size: cover;
+	}
+	9.9%{
+		background-image: url(cubo/0030.png);
+		background-size: cover;
+	}
+	10.3%{
+		background-image: url(cubo/0031.png);
+		background-size: cover;
+	}
+	10.6%{
+		background-image: url(cubo/0032.png);
+		background-size: cover;
+	}
+	10.9%{
+		background-image: url(cubo/0033.png);
+		background-size: cover;
+	}
+	11.3%{
+		background-image: url(cubo/0034.png);
+		background-size: cover;
+	}
+	11.6%{
+		background-image: url(cubo/0035.png);
+		background-size: cover;
+	}
+	11.9%{
+		background-image: url(cubo/0036.png);
+		background-size: cover;
+	}
+	12.3%{
+		background-image: url(cubo/0037.png);
+		background-size: cover;
+	}
+	12.6%{
+		background-image: url(cubo/0038.png);
+		background-size: cover;
+	}
+	12.9%{
+		background-image: url(cubo/0039.png);
+		background-size: cover;
+	}
+	13.3%{
+		background-image: url(cubo/0040.png);
+		background-size: cover;
+	}
+	13.6%{
+		background-image: url(cubo/0041.png);
+		background-size: cover;
+	}
+	13.9%{
+		background-image: url(cubo/0042.png);
+		background-size: cover;
+	}
+	14.3%{
+		background-image: url(cubo/0043.png);
+		background-size: cover;
+	}
+	14.6%{
+		background-image: url(cubo/0044.png);
+		background-size: cover;
+	}
+	14.9%{
+		background-image: url(cubo/0045.png);
+		background-size: cover;
+	}
+	15.3%{
+		background-image: url(cubo/0046.png);
+		background-size: cover;
+	}
+	15.6%{
+		background-image: url(cubo/0047.png);
+		background-size: cover;
+	}
+	15.9%{
+		background-image: url(cubo/0048.png);
+		background-size: cover;
+	}
+	16.3%{
+		background-image: url(cubo/0049.png);
+		background-size: cover;
+	}
+	16.6%{
+		background-image: url(cubo/0050.png);
+		background-size: cover;
+	}
+	16.9%{
+		background-image: url(cubo/0051.png);
+		background-size: cover;
+	}
+	17.3%{
+		background-image: url(cubo/0052.png);
+		background-size: cover;
+	}
+	17.6%{
+		background-image: url(cubo/0052.png);
+		background-size: cover;
+	}
+	17.9%{
+		background-image: url(cubo/0053.png);
+		background-size: cover;
+	}
+	18.3%{
+		background-image: url(cubo/0054.png);
+		background-size: cover;
+	}
+	18.6%{
+		background-image: url(cubo/0055.png);
+		background-size: cover;
+	}
+	18.9%{
+		background-image: url(cubo/0056.png);
+		background-size: cover;
+	}
+	19.3%{
+		background-image: url(cubo/0057.png);
+		background-size: cover;
+	}
+	19.6%{
+		background-image: url(cubo/0058.png);
+		background-size: cover;
+	}
+	19.9%{
+		background-image: url(cubo/0059.png);
+		background-size: cover;
+	}
+	20.3%{
+		background-image: url(cubo/0060.png);
+		background-size: cover;
+	}
+	20.6%{
+		background-image: url(cubo/0061.png);
+		background-size: cover;
+	}
+	20.9%{
+		background-image: url(cubo/0062.png);
+		background-size: cover;
+	}
+	21.3%{
+		background-image: url(cubo/0063.png);
+		background-size: cover;
+	}
+	21.6%{
+		background-image: url(cubo/0064.png);
+		background-size: cover;
+	}
+	21.9%{
+		background-image: url(cubo/0065.png);
+		background-size: cover;
+	}
+	22.3%{
+		background-image: url(cubo/0066.png);
+		background-size: cover;
+	}
+	22.6%{
+		background-image: url(cubo/0067.png);
+		background-size: cover;
+	}
+	22.9%{
+		background-image: url(cubo/0068.png);
+		background-size: cover;
+	}
+	23.3%{
+		background-image: url(cubo/0069.png);
+		background-size: cover;
+	}
+	23.6%{
+		background-image: url(cubo/0070.png);
+		background-size: cover;
+	}
+	23.9%{
+		background-image: url(cubo/0071.png);
+		background-size: cover;
+	}
+	24.3%{
+		background-image: url(cubo/0072.png);
+		background-size: cover;
+	}
+	24.6%{
+		background-image: url(cubo/0073.png);
+		background-size: cover;
+	}
+	24.9%{
+		background-image: url(cubo/0074.png);
+		background-size: cover;
+	}
+	25.3%{
+		background-image: url(cubo/0075.png);
+		background-size: cover;
+	}
+	25.6%{
+		background-image: url(cubo/0076.png);
+		background-size: cover;
+	}
+	25.9%{
+		background-image: url(cubo/0077.png);
+		background-size: cover;
+	}
+	26.3%{
+		background-image: url(cubo/0078.png);
+		background-size: cover;
+	}
+	26.6%{
+		background-image: url(cubo/0079.png);
+		background-size: cover;
+	}
+	26.9%{
+		background-image: url(cubo/0080.png);
+		background-size: cover;
+	}
+	27.3%{
+		background-image: url(cubo/0081.png);
+		background-size: cover;
+	}
+	27.6%{
+		background-image: url(cubo/0082.png);
+		background-size: cover;
+	}
+	27.9%{
+		background-image: url(cubo/0083.png);
+		background-size: cover;
+	}
+	28.3%{
+		background-image: url(cubo/0084.png);
+		background-size: cover;
+	}
+	28.6%{
+		background-image: url(cubo/0085.png);
+		background-size: cover;
+	}
+	28.9%{
+		background-image: url(cubo/0086.png);
+		background-size: cover;
+	}
+	29.3%{
+		background-image: url(cubo/0087.png);
+		background-size: cover;
+	}
+	29.6%{
+		background-image: url(cubo/0088.png);
+		background-size: cover;
+	}
+	29.9%{
+		background-image: url(cubo/0089.png);
+		background-size: cover;
+	}
+	30.3%{
+		background-image: url(cubo/0090.png);
+		background-size: cover;
+	}
+	30.6%{
+		background-image: url(cubo/0091.png);
+		background-size: cover;
+	}
+	30.9%{
+		background-image: url(cubo/0092.png);
+		background-size: cover;
+	}
+	31.3%{
+		background-image: url(cubo/0093.png);
+		background-size: cover;
+	}
+	31.6%{
+		background-image: url(cubo/0094.png);
+		background-size: cover;
+	}
+	31.9%{
+		background-image: url(cubo/0095.png);
+		background-size: cover;
+	}
+	32.3%{
+		background-image: url(cubo/0096.png);
+		background-size: cover;
+	}
+	32.6%{
+		background-image: url(cubo/0097.png);
+		background-size: cover;
+	}
+	32.9%{
+		background-image: url(cubo/0098.png);
+		background-size: cover;
+	}
+	33.3%{
+		background-image: url(cubo/0099.png);
+		background-size: cover;
+	}
+	33.6%{
+		background-image: url(cubo/0100.png);
+		background-size: cover;
+	}
+	33.9%{
+		background-image: url(cubo/0101.png);
+		background-size: cover;
+	}
+	34.3%{
+		background-image: url(cubo/0102.png);
+		background-size: cover;
+	}
+	34.6%{
+		background-image: url(cubo/0103.png);
+		background-size: cover;
+	}
+	34.9%{
+		background-image: url(cubo/0104.png);
+		background-size: cover;
+	}
+	35.3%{
+		background-image: url(cubo/0105.png);
+		background-size: cover;
+	}
+	35.6%{
+		background-image: url(cubo/0106.png);
+		background-size: cover;
+	}
+	35.9%{
+		background-image: url(cubo/0107.png);
+		background-size: cover;
+	}
+	36.3%{
+		background-image: url(cubo/0108.png);
+		background-size: cover;
+	}
+	36.6%{
+		background-image: url(cubo/0109.png);
+		background-size: cover;
+	}
+	36.9%{
+		background-image: url(cubo/0110.png);
+		background-size: cover;
+	}
+	37.3%{
+		background-image: url(cubo/0111.png);
+		background-size: cover;
+	}
+	37.6%{
+		background-image: url(cubo/0112.png);
+		background-size: cover;
+	}
+	37.9%{
+		background-image: url(cubo/0113.png);
+		background-size: cover;
+	}
+	38.3%{
+		background-image: url(cubo/0114.png);
+		background-size: cover;
+	}
+	38.6%{
+		background-image: url(cubo/0115.png);
+		background-size: cover;
+	}
+	38.9%{
+		background-image: url(cubo/0116.png);
+		background-size: cover;
+	}
+	39.3%{
+		background-image: url(cubo/0117.png);
+		background-size: cover;
+	}
+	39.6%{
+		background-image: url(cubo/0118.png);
+		background-size: cover;
+	}
+	39.9%{
+		background-image: url(cubo/0119.png);
+		background-size: cover;
+	}
+	40.3%{
+		background-image: url(cubo/0120.png);
+		background-size: cover;
+	}
+	40.6%{
+		background-image: url(cubo/0121.png);
+		background-size: cover;
+	}
+	40.9%{
+		background-image: url(cubo/0122.png);
+		background-size: cover;
+	}
+	41.3%{
+		background-image: url(cubo/0123.png);
+		background-size: cover;
+	}
+	41.6%{
+		background-image: url(cubo/0124.png);
+		background-size: cover;
+	}
+	41.9%{
+		background-image: url(cubo/0125.png);
+		background-size: cover;
+	}
+	42.3%{
+		background-image: url(cubo/0126.png);
+		background-size: cover;
+	}
+	42.6%{
+		background-image: url(cubo/0127.png);
+		background-size: cover;
+	}
+	42.9%{
+		background-image: url(cubo/0128.png);
+		background-size: cover;
+	}
+	43.3%{
+		background-image: url(cubo/0129.png);
+		background-size: cover;
+	}
+	43.6%{
+		background-image: url(cubo/0130.png);
+		background-size: cover;
+	}
+	43.9%{
+		background-image: url(cubo/0131.png);
+		background-size: cover;
+	}
+	44.3%{
+		background-image: url(cubo/0132.png);
+		background-size: cover;
+	}
+	44.6%{
+		background-image: url(cubo/0133.png);
+		background-size: cover;
+	}
+	44.9%{
+		background-image: url(cubo/0134.png);
+		background-size: cover;
+	}
+	45.3%{
+		background-image: url(cubo/0135.png);
+		background-size: cover;
+	}
+	45.6%{
+		background-image: url(cubo/0136.png);
+		background-size: cover;
+	}
+	45.9%{
+		background-image: url(cubo/0137.png);
+		background-size: cover;
+	}
+	46.3%{
+		background-image: url(cubo/0138.png);
+		background-size: cover;
+	}
+	46.6%{
+		background-image: url(cubo/0139.png);
+		background-size: cover;
+	}
+	46.9%{
+		background-image: url(cubo/0140.png);
+		background-size: cover;
+	}
+	47.3%{
+		background-image: url(cubo/0141.png);
+		background-size: cover;
+	}
+	47.6%{
+		background-image: url(cubo/0142.png);
+		background-size: cover;
+	}
+	47.9%{
+		background-image: url(cubo/0143.png);
+		background-size: cover;
+	}
+	48.3%{
+		background-image: url(cubo/0144.png);
+		background-size: cover;
+	}
+	48.6%{
+		background-image: url(cubo/0145.png);
+		background-size: cover;
+	}
+	48.9%{
+		background-image: url(cubo/0146.png);
+		background-size: cover;
+	}
+	49.3%{
+		background-image: url(cubo/0147.png);
+		background-size: cover;
+	}
+	49.6%{
+		background-image: url(cubo/0148.png);
+		background-size: cover;
+	}
+	49.9%{
+		background-image: url(cubo/0149.png);
+		background-size: cover;
+	}
+	50.3%{
+		background-image: url(cubo/0150.png);
+		background-size: cover;
+	}
+	50.6%{
+		background-image: url(cubo/0151.png);
+		background-size: cover;
+	}
+	50.9%{
+		background-image: url(cubo/0152.png);
+		background-size: cover;
+	}
+	51.3%{
+		background-image: url(cubo/0153.png);
+		background-size: cover;
+	}
+	51.6%{
+		background-image: url(cubo/0154.png);
+		background-size: cover;
+	}
+	51.9%{
+		background-image: url(cubo/0155.png);
+		background-size: cover;
+	}
+	52.3%{
+		background-image: url(cubo/0156.png);
+		background-size: cover;
+	}
+	52.6%{
+		background-image: url(cubo/0157.png);
+		background-size: cover;
+	}
+	52.9%{
+		background-image: url(cubo/0158.png);
+		background-size: cover;
+	}
+	53.3%{
+		background-image: url(cubo/0159.png);
+		background-size: cover;
+	}
+	53.6%{
+		background-image: url(cubo/0160.png);
+		background-size: cover;
+	}
+	53.9%{
+		background-image: url(cubo/0161.png);
+		background-size: cover;
+	}
+	54.3%{
+		background-image: url(cubo/0162.png);
+		background-size: cover;
+	}
+	54.6%{
+		background-image: url(cubo/0163.png);
+		background-size: cover;
+	}
+	54.9%{
+		background-image: url(cubo/0164.png);
+		background-size: cover;
+	}
+	55.3%{
+		background-image: url(cubo/0165.png);
+		background-size: cover;
+	}
+	55.6%{
+		background-image: url(cubo/0166.png);
+		background-size: cover;
+	}
+	55.9%{
+		background-image: url(cubo/0167.png);
+		background-size: cover;
+	}
+	56.3%{
+		background-image: url(cubo/0168.png);
+		background-size: cover;
+	}
+	56.6%{
+		background-image: url(cubo/0169.png);
+		background-size: cover;
+	}
+	56.9%{
+		background-image: url(cubo/0170.png);
+		background-size: cover;
+	}
+	57.3%{
+		background-image: url(cubo/0171.png);
+		background-size: cover;
+	}
+	57.6%{
+		background-image: url(cubo/0172.png);
+		background-size: cover;
+	}
+	57.9%{
+		background-image: url(cubo/0173.png);
+		background-size: cover;
+	}
+	58.3%{
+		background-image: url(cubo/0174.png);
+		background-size: cover;
+	}
+	58.6%{
+		background-image: url(cubo/0175.png);
+		background-size: cover;
+	}
+	58.9%{
+		background-image: url(cubo/0176.png);
+		background-size: cover;
+	}
+	59.3%{
+		background-image: url(cubo/0177.png);
+		background-size: cover;
+	}
+	59.6%{
+		background-image: url(cubo/0178.png);
+		background-size: cover;
+	}
+	59.9%{
+		background-image: url(cubo/0179.png);
+		background-size: cover;
+	}
+	60.3%{
+		background-image: url(cubo/0180.png);
+		background-size: cover;
+	}
+	60.6%{
+		background-image: url(cubo/0181.png);
+		background-size: cover;
+	}
+	60.9%{
+		background-image: url(cubo/0182.png);
+		background-size: cover;
+	}
+	61.3%{
+		background-image: url(cubo/0183.png);
+		background-size: cover;
+	}
+	61.6%{
+		background-image: url(cubo/0184.png);
+		background-size: cover;
+	}
+	61.9%{
+		background-image: url(cubo/085.png);
+		background-size: cover;
+	}
+	62.3%{
+		background-image: url(cubo/0186.png);
+		background-size: cover;
+	}
+	62.6%{
+		background-image: url(cubo/0187.png);
+		background-size: cover;
+	}
+	62.9%{
+		background-image: url(cubo/0188.png);
+		background-size: cover;
+	}
+	63.3%{
+		background-image: url(cubo/0189.png);
+		background-size: cover;
+	}
+	63.6%{
+		background-image: url(cubo/0190.png);
+		background-size: cover;
+	}
+	63.9%{
+		background-image: url(cubo/0191.png);
+		background-size: cover;
+	}
+	64.3%{
+		background-image: url(cubo/0192.png);
+		background-size: cover;
+	}
+	64.6%{
+		background-image: url(cubo/0193.png);
+		background-size: cover;
+	}
+	64.9%{
+		background-image: url(cubo/0194.png);
+		background-size: cover;
+	}
+	65.3%{
+		background-image: url(cubo/0195.png);
+		background-size: cover;
+	}
+	65.6%{
+		background-image: url(cubo/0196.png);
+		background-size: cover;
+	}
+	65.9%{
+		background-image: url(cubo/0197.png);
+		background-size: cover;
+	}
+	66.3%{
+		background-image: url(cubo/0198.png);
+		background-size: cover;
+	}
+	66.6%{
+		background-image: url(cubo/0199.png);
+		background-size: cover;
+	}
+	66.9%{
+		background-image: url(cubo/0200.png);
+		background-size: cover;
+	}
+	67.3%{
+		background-image: url(cubo/0201.png);
+		background-size: cover;
+	}
+	67.6%{
+		background-image: url(cubo/0202.png);
+		background-size: cover;
+	}
+	67.9%{
+		background-image: url(cubo/0203.png);
+		background-size: cover;
+	}
+	68.3%{
+		background-image: url(cubo/0204.png);
+		background-size: cover;
+	}
+	68.6%{
+		background-image: url(cubo/0205.png);
+		background-size: cover;
+	}
+	68.9%{
+		background-image: url(cubo/0206.png);
+		background-size: cover;
+	}
+	69.3%{
+		background-image: url(cubo/0207.png);
+		background-size: cover;
+	}
+	69.6%{
+		background-image: url(cubo/0208.png);
+		background-size: cover;
+	}
+	69.9%{
+		background-image: url(cubo/0209.png);
+		background-size: cover;
+	}
+	70.3%{
+		background-image: url(cubo/0210.png);
+		background-size: cover;
+	}
+	70.6%{
+		background-image: url(cubo/0211.png);
+		background-size: cover;
+	}
+	70.9%{
+		background-image: url(cubo/0212.png);
+		background-size: cover;
+	}
+	71.3%{
+		background-image: url(cubo/0213.png);
+		background-size: cover;
+	}
+	71.6%{
+		background-image: url(cubo/0214.png);
+		background-size: cover;
+	}
+	71.9%{
+		background-image: url(cubo/0215.png);
+		background-size: cover;
+	}
+	72.3%{
+		background-image: url(cubo/0216.png);
+		background-size: cover;
+	}
+	72.6%{
+		background-image: url(cubo/0217.png);
+		background-size: cover;
+	}
+	72.9%{
+		background-image: url(cubo/0218.png);
+		background-size: cover;
+	}
+	73.3%{
+		background-image: url(cubo/0219.png);
+		background-size: cover;
+	}
+	73.6%{
+		background-image: url(cubo/0220.png);
+		background-size: cover;
+	}
+	73.9%{
+		background-image: url(cubo/0221.png);
+		background-size: cover;
+	}
+	74.3%{
+		background-image: url(cubo/0222.png);
+		background-size: cover;
+	}
+	74.6%{
+		background-image: url(cubo/0223.png);
+		background-size: cover;
+	}
+	74.9%{
+		background-image: url(cubo/0224.png);
+		background-size: cover;
+	}
+	75.3%{
+		background-image: url(cubo/0225.png);
+		background-size: cover;
+	}
+	75.6%{
+		background-image: url(cubo/0226.png);
+		background-size: cover;
+	}
+	75.9%{
+		background-image: url(cubo/0227.png);
+		background-size: cover;
+	}
+	76.3%{
+		background-image: url(cubo/0228.png);
+		background-size: cover;
+	}
+	76.6%{
+		background-image: url(cubo/0229.png);
+		background-size: cover;
+	}
+	76.9%{
+		background-image: url(cubo/0230.png);
+		background-size: cover;
+	}
+	77.3%{
+		background-image: url(cubo/0231.png);
+		background-size: cover;
+	}
+	77.6%{
+		background-image: url(cubo/0232.png);
+		background-size: cover;
+	}
+	77.9%{
+		background-image: url(cubo/0233.png);
+		background-size: cover;
+	}
+	78.3%{
+		background-image: url(cubo/0234.png);
+		background-size: cover;
+	}
+	78.6%{
+		background-image: url(cubo/0235.png);
+		background-size: cover;
+	}
+	78.9%{
+		background-image: url(cubo/0236.png);
+		background-size: cover;
+	}
+	79.3%{
+		background-image: url(cubo/0237.png);
+		background-size: cover;
+	}
+	79.6%{
+		background-image: url(cubo/0238.png);
+		background-size: cover;
+	}
+	79.9%{
+		background-image: url(cubo/0239.png);
+		background-size: cover;
+	}
+	80.3%{
+		background-image: url(cubo/0240.png);
+		background-size: cover;
+	}
+	80.6%{
+		background-image: url(cubo/0241.png);
+		background-size: cover;
+	}
+	80.9%{
+		background-image: url(cubo/0242.png);
+		background-size: cover;
+	}
+	81.3%{
+		background-image: url(cubo/0243.png);
+		background-size: cover;
+	}
+	81.6%{
+		background-image: url(cubo/0244.png);
+		background-size: cover;
+	}
+	81.9%{
+		background-image: url(cubo/0245.png);
+		background-size: cover;
+	}
+	82.3%{
+		background-image: url(cubo/0246.png);
+		background-size: cover;
+	}
+	82.6%{
+		background-image: url(cubo/0247.png);
+		background-size: cover;
+	}
+	82.9%{
+		background-image: url(cubo/0248.png);
+		background-size: cover;
+	}
+	83.3%{
+		background-image: url(cubo/0249.png);
+		background-size: cover;
+	}
+	83.6%{
+		background-image: url(cubo/0250.png);
+		background-size: cover;
+	}
+	83.9%{
+		background-image: url(cubo/0251.png);
+		background-size: cover;
+	}
+	84.3%{
+		background-image: url(cubo/0252.png);
+		background-size: cover;
+	}
+	84.6%{
+		background-image: url(cubo/0253.png);
+		background-size: cover;
+	}
+	84.9%{
+		background-image: url(cubo/0254.png);
+		background-size: cover;
+	}
+	85.3%{
+		background-image: url(cubo/0255.png);
+		background-size: cover;
+	}
+	85.6%{
+		background-image: url(cubo/0256.png);
+		background-size: cover;
+	}
+	85.9%{
+		background-image: url(cubo/0257.png);
+		background-size: cover;
+	}
+	86.3%{
+		background-image: url(cubo/0258.png);
+		background-size: cover;
+	}
+	86.6%{
+		background-image: url(cubo/0259.png);
+		background-size: cover;
+	}
+	86.9%{
+		background-image: url(cubo/0260.png);
+		background-size: cover;
+	}
+	87.3%{
+		background-image: url(cubo/0261.png);
+		background-size: cover;
+	}
+	87.6%{
+		background-image: url(cubo/0262.png);
+		background-size: cover;
+	}
+	87.9%{
+		background-image: url(cubo/0263.png);
+		background-size: cover;
+	}
+	88.3%{
+		background-image: url(cubo/0264.png);
+		background-size: cover;
+	}
+	88.6%{
+		background-image: url(cubo/0265.png);
+		background-size: cover;
+	}
+	88.9%{
+		background-image: url(cubo/0266.png);
+		background-size: cover;
+	}
+	89.3%{
+		background-image: url(cubo/0267.png);
+		background-size: cover;
+	}
+	89.6%{
+		background-image: url(cubo/0268.png);
+		background-size: cover;
+	}
+	89.9%{
+		background-image: url(cubo/0269.png);
+		background-size: cover;
+	}
+	90.3%{
+		background-image: url(cubo/0270.png);
+		background-size: cover;
+	}
+	90.6%{
+		background-image: url(cubo/0271.png);
+		background-size: cover;
+	}
+	90.9%{
+		background-image: url(cubo/0272.png);
+		background-size: cover;
+	}
+	91.3%{
+		background-image: url(cubo/0273.png);
+		background-size: cover;
+	}
+	91.6%{
+		background-image: url(cubo/0274.png);
+		background-size: cover;
+	}
+	91.9%{
+		background-image: url(cubo/0275.png);
+		background-size: cover;
+	}
+	92.3%{
+		background-image: url(cubo/0276.png);
+		background-size: cover;
+	}
+	92.6%{
+		background-image: url(cubo/0277.png);
+		background-size: cover;
+	}
+	92.9%{
+		background-image: url(cubo/0278.png);
+		background-size: cover;
+	}
+	93.3%{
+		background-image: url(cubo/0279.png);
+		background-size: cover;
+	}	
+	93.6%{
+		background-image: url(cubo/0280.png);
+		background-size: cover;
+	}
+	93.9%{
+		background-image: url(cubo/0281.png);
+		background-size: cover;
+	}
+	94.3%{
+		background-image: url(cubo/0282.png);
+		background-size: cover;
+	}
+	94.6%{
+		background-image: url(cubo/0283.png);
+		background-size: cover;
+	}
+	94.9%{
+		background-image: url(cubo/0284.png);
+		background-size: cover;
+	}
+	95.3%{
+		background-image: url(cubo/0285.png);
+		background-size: cover;
+	}
+	95.6%{
+		background-image: url(cubo/0286.png);
+		background-size: cover;
+	}
+	95.9%{
+		background-image: url(cubo/0287.png);
+		background-size: cover;
+	}
+	96.3%{
+		background-image: url(cubo/0288.png);
+		background-size: cover;
+	}
+	96.6%{
+		background-image: url(cubo/0289.png);
+		background-size: cover;
+	}	
+	96.9%{
+		background-image: url(cubo/0290.png);
+		background-size: cover;
+	}
+	97.3%{
+		background-image: url(cubo/0291.png);
+		background-size: cover;
+	}
+	97.6%{
+		background-image: url(cubo/0292.png);
+		background-size: cover;
+	}
+	97.9%{
+		background-image: url(cubo/0293.png);
+		background-size: cover;
+	}
+	98.3%{
+		background-image: url(cubo/0294.png);
+		background-size: cover;
+	}
+	98.6%{
+		background-image: url(cubo/0295.png);
+		background-size: cover;
+	}
+	98.9%{
+		background-image: url(cubo/0296.png);
+		background-size: cover;
+	}
+	99.3%{
+		background-image: url(cubo/0297.png);
+		background-size: cover;
+	}
+	99.6%{
+		background-image: url(cubo/0298.png);
+		background-size: cover;
+	}
+	99.9%{
+		background-image: url(cubo/0299.png);
+		background-size: cover;
+	}
+	100.3%{
+		background-image: url(cubo/0300.png);
+		background-size: cover;
+	}
 };
 /*----------------------------------------------------------------------------------------------------*/
 
