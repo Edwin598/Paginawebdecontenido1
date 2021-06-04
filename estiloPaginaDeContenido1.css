@@ -137,11 +137,17 @@ body{
 	text-align: start;
 	font-size: 1fr;
 }
+.div-containerUpperSectionRender_header_nav_div_div_button_ul_li_a_p1:hover{
+	background-color: #6f6e8dbb;
+	border-radius: 15%;
+}
 .div-containerUpperSectionRender_header_nav_div_div_button-open1:hover{
 	transition-duration: 2592000s;
 	position: fixed;
 	width: 33.3%;
 	height: 7.4%;
+	max-width: 400px;
+	min-width: 250px;
 }
 .div-containerUpperSectionRender_header_nav_div_div_button-open1:focus{
 	background-color: #4e4c6bcc; /*#3d3b5a55*/
@@ -252,8 +258,12 @@ body{
 	left: 20px;
 	margin: 0 0 0 10px;
 	display: grid;
-	color: #aaa;
+	color: #fff;
 	justify-content: start;
+}
+.div-containerUpperSectionRender_header_nav_div_div_button_ul_li_a_p2:hover{
+	background-color: #6f6e8dee;
+	border-radius: 15%;
 }
 .div-containerUpperSectionRender_header_nav_div_div_button-open2:hover{
 	transition-duration: 2592000s;
@@ -511,8 +521,7 @@ body{
 }
 .div-containerUpperSectionRender_header_div_div_div-animation{
 	width: 100%;
-	height: 96%;
-	margin: 5px 20px;
+	height: 100%;
 	background-image: url(cubo/0001.png);
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -2101,13 +2110,15 @@ div-containerContent_div_h4-positionTheTitleTheArticles{
 
 .div_footer_div-firstSection{
 	background-color: #cc3511;/*bb2400*/
+	color: #000;
 	display: grid;
 	grid-column: 2/3;
 	grid-row: 1/2;
 	grid-template-rows: 100%;
 	grid-template-columns: 100%;
-	border-top: 5px solid #aa1400;
-	border-bottom: 5px solid #aa1400;
+	border-top: 5px solid #990300;
+	border-bottom: 5px solid #990300;
+	border-right: 5px solid #990300;
 }
 .div_footer_div_div-contacts{
 	display: grid;
@@ -2135,7 +2146,6 @@ div-containerContent_div_h4-positionTheTitleTheArticles{
 	background-color: #fff;
 	border: 1px solid #000;
 	border-radius: 45%;
-	font-size: 16px;
 	width: 28.5px;
 	height: 20px;
 	display: grid;
@@ -2166,11 +2176,11 @@ div-containerContent_div_h4-positionTheTitleTheArticles{
 }
 .div_footer_div_div_div-facebookContent p{
 	display: grid;
-	font-size: 80%;
-	color: #000;
+	font-size: 60%;
+	color: #fff;
 	margin: 5px 0 0 0;
 	justify-content: center;
-	align-content: start;
+	align-content: center;
 }
 
 /*------------------------github--------------------------------*/
@@ -2213,11 +2223,11 @@ div-containerContent_div_h4-positionTheTitleTheArticles{
 }
 .div_footer_div_div_div-githubContent p{
 	display: grid;
-	font-size: 80%;
-	color: #000;
+	font-size: 60%;
+	color: #fff;
 	margin: 5px 0 0 0;
 	justify-content: center;
-	align-content: start;
+	align-content: center;
 }
 
 /*------------------------gitlab--------------------------------*/
@@ -2258,11 +2268,11 @@ div-containerContent_div_h4-positionTheTitleTheArticles{
 }
 .div_footer_div_div_div-gitlabContent p{
 	display: grid;
-	font-size: 80%;
-	color: #000;
+	font-size: 60%;
+	color: #fff;
 	margin: 5px 0 0 0;
 	justify-content: center;
-	align-content: start;
+	align-content: center;
 }
 
 /*------------------------whatsapp--------------------------------*/
@@ -2305,11 +2315,11 @@ div-containerContent_div_h4-positionTheTitleTheArticles{
 }
 .div_footer_div_div_div-whatsappContent p{
 	display: grid;
-	font-size: 80%;
-	color: #000;
+	font-size: 60%;
+	color: #fff;
 	margin: 5px 0 0 0;
 	justify-content: center;
-	align-content: start;
+	align-content: center;
 }
 
 /*------------------------linkedin--------------------------------*/
@@ -2350,11 +2360,11 @@ div-containerContent_div_h4-positionTheTitleTheArticles{
 }
 .div_footer_div_div_div-linkedinContent p{
 	display: grid;
-	font-size: 80%;
-	color: #000;
+	font-size: 60%;
+	color: #fff;
 	margin: 5px 0 0 0;
 	justify-content: center;
-	align-content: start;
+	align-content: center;
 }
 
 /*------------------------email--------------------------------*/
@@ -2397,11 +2407,11 @@ div-containerContent_div_h4-positionTheTitleTheArticles{
 }
 .div_footer_div_div_div-emailContent p{
 	display: grid;
-	font-size: 80%;
-	color: #000;
+	font-size: 60%;
+	color: #fff;
 	margin: 5px 0 0 0;
 	justify-content: center;
-	align-content: start;
+	align-content: center;
 }
 
 /*----------------------------------------------------------------------------------------------------*/
@@ -2433,7 +2443,7 @@ div-containerContent_div_h4-positionTheTitleTheArticles{
 	display: grid;
 	justify-content: center;
 	align-content: start;
-	font-size: 100%;
+	font-size: 90%;
 	margin: 0;
 	color: #fff;
 	overflow: scroll;
