@@ -2092,14 +2092,16 @@ div-containerContent_div_h4-positionTheTitleTheArticles{
 
 
 /*---------------------------------------------------------footer--------------------------------------------------------*/
-
+.grov{
+	height: 340px;
+}
 .div_footer-lowerSection{
 	width: 100%;
 	height: 100%;
         display:grid;
         background-color: #21213b;
         color:#fff;
-        font-size:30px;
+        font-size: 30px;
 	grid-template-columns: 1% 40% 59%;
         grid-template-rows: 100%;
 	margin: 0;
@@ -2108,7 +2110,7 @@ div-containerContent_div_h4-positionTheTitleTheArticles{
 
 /*-------------------------------------------------------------------------------------------------------*/
 
-.div_footer_div-firstSection{
+.div_footer_div-firstSection{         /*agrandar un poco mas el espacion de firstSection con media querys*/
 	background-color: #cc3511;/*bb2400*/
 	color: #000;
 	display: grid;
@@ -2119,13 +2121,15 @@ div-containerContent_div_h4-positionTheTitleTheArticles{
 	border-top: 5px solid #990300;
 	border-bottom: 5px solid #990300;
 	border-right: 5px solid #990300;
+	border-left: 5px solid #990300;
+	border-radius: 0 0 20px 20px;
 }
 .div_footer_div_div-contacts{
 	display: grid;
 	grid-column: 1/2;
 	grid-row: 1/2;
 	grid-template-columns: 20% 80%;
-	grid-template-rows: repeat(7,14.2%);
+	grid-template-rows: repeat(7,14%);
 }
 .div_footer_div_div_p-followUs{
 	margin: 0;
@@ -2174,13 +2178,18 @@ div-containerContent_div_h4-positionTheTitleTheArticles{
 	overflow: hidden;
 	margin: 10px 0 0 0;
 }
-.div_footer_div_div_div-facebookContent p{
+.div_footer_div_div_div-facebookContent a{
+	display: grid;
+	text-decoration: none;
+	justify-content: center;
+	align-content: center;
+	
+}
+.div_footer_div_div_div-facebookContent a p{
 	display: grid;
 	font-size: 60%;
 	color: #fff;
 	margin: 5px 0 0 0;
-	justify-content: center;
-	align-content: center;
 }
 
 /*------------------------github--------------------------------*/
@@ -2221,13 +2230,18 @@ div-containerContent_div_h4-positionTheTitleTheArticles{
 	overflow: hidden;
 	margin: 10px 0 0 0;
 }
-.div_footer_div_div_div-githubContent p{
+.div_footer_div_div_div-githubContent a{
+	display: grid;
+	text-decoration: none;
+	justify-content: center;
+	align-content: center;
+	
+}
+.div_footer_div_div_div-githubContent a p{
 	display: grid;
 	font-size: 60%;
 	color: #fff;
 	margin: 5px 0 0 0;
-	justify-content: center;
-	align-content: center;
 }
 
 /*------------------------gitlab--------------------------------*/
@@ -2266,13 +2280,17 @@ div-containerContent_div_h4-positionTheTitleTheArticles{
 	overflow: hidden;
 	margin: 10px 0 0 0;
 }
-.div_footer_div_div_div-gitlabContent p{
+.div_footer_div_div_div-gitlabContent a{
+	display: grid;
+	text-decoration: none;
+	justify-content: center;
+	align-content: center;	
+}
+.div_footer_div_div_div-gitlabContent a p{
 	display: grid;
 	font-size: 60%;
 	color: #fff;
 	margin: 5px 0 0 0;
-	justify-content: center;
-	align-content: center;
 }
 
 /*------------------------whatsapp--------------------------------*/
@@ -2280,6 +2298,7 @@ div-containerContent_div_h4-positionTheTitleTheArticles{
 .div_footer_div_div_div-contactsWhatsapp{
 	width: 28.5px;
 	height: 20px;
+	margin: 5px 0;
 	display: grid;
 	grid-column: 1/2;
 	grid-row: 5/6;
@@ -2311,14 +2330,14 @@ div-containerContent_div_h4-positionTheTitleTheArticles{
 	font-size: 70%;
 	overflow: scroll;
 	overflow: hidden;
-	margin: 10px 0 0 0;
+	margin: 0;
 }
 .div_footer_div_div_div-whatsappContent p{
 	display: grid;
 	font-size: 60%;
 	color: #fff;
-	margin: 5px 0 0 0;
-	justify-content: center;
+	margin: 15% 0 0 0;
+	text-align: center;
 	align-content: center;
 }
 
@@ -2358,13 +2377,17 @@ div-containerContent_div_h4-positionTheTitleTheArticles{
 	overflow: hidden;
 	margin: 10px 0 0 0;
 }
-.div_footer_div_div_div-linkedinContent p{
+.div_footer_div_div_div-linkedinContent a{
+	display: grid;
+	text-decoration: none;
+	justify-content: center;
+	align-content: center;	
+}
+.div_footer_div_div_div-linkedinContent a p{
 	display: grid;
 	font-size: 60%;
 	color: #fff;
 	margin: 5px 0 0 0;
-	justify-content: center;
-	align-content: center;
 }
 
 /*------------------------email--------------------------------*/
@@ -2395,23 +2418,101 @@ div-containerContent_div_h4-positionTheTitleTheArticles{
 	clip-path: polygon(88% 21%, 7% 21%, 7% 70%, 7% 75%, 89% 75%, 89% 26%, 61% 48%, 89% 70%, 89% 75%, 59% 50%, 48% 57%, 37% 50%, 7% 75%, 7% 71%, 35% 48%, 7% 25%, 7% 21%, 49% 54%, 89% 21%);
 }
 .div_footer_div_div_div-emailContent{
+	height: 47px;
 	display: grid;
 	grid-column: 2/3;
 	grid-row: 7/8;
-	grid-template-columns: repeat(auto-fill,120px);
-	grid-template-rows: repeat(auto-fill,33.3%);
+	grid-template-columns: repeat(auto-fill,60%);
+	grid-template-rows: repeat(2,50%);
 	font-size: 70%;
 	overflow: scroll;
 	overflow: hidden;
-	margin: 10px 0 0 0;
+	margin: 0;
 }
-.div_footer_div_div_div-emailContent p{
+.div_footer_div_div_div_p-email1{
+	display: grid;
+	grid-column: 1/2;
+	grid-row: 1/2;
+	font-size: 60%;
+	color: transparent;
+	margin: 0;
+	text-align: center;
+	position: relative;
+	top: 5%;
+	z-index: 1;
+	justify-content: start;
+	align-content: center;
+}
+.div_footer_div_div_div_p-email1::after{
+	content: "Colaborador1";
+	display: grid;
+	grid-column: 1/2;
+	grid-row: 1/2;
+	font-size: 100%;
+	color: #fff;
+	margin: 0;
+	position: relative;
+	top: 0;
+	text-align: center;
+	justify-content: start;
+	align-content: center;
+}
+.div_footer_div_div_div_p-email1:hover{
+	width: 100%;
+	height: 0px;
+	display: grid;
+	grid-column: 1/2;
+	grid-row: 1/2;
+	font-size: 60%;
+	color: #fff;
+	margin: 0;
+	position: relative;
+	top: 59%;
+	text-align: center;
+	justify-content: start;
+	align-content: center;	
+}
+.div_footer_div_div_div_p-email2{
+	display: grid;
+	grid-column: 1/2;
+	grid-row: 2/3;
+	position: sticky;
+	font-size: 60%;
+	color: transparent;
+	margin: 0;
+	position: relative;
+	top: 10%;
+	text-align: center;
+	z-index: 1;
+	justify-content: start;
+	align-content: center;	
+}
+.div_footer_div_div_div_p-email2::after{
+	content: "Colaborador2";
+	display: grid;
+	grid-column: 1/2;
+	grid-row: 1/2;
+	font-size: 100%;
+	color: #fff;
+	margin: 0;
+	position: relative;
+	top: 10%;
+	text-align: center;
+	justify-content: start;
+	align-content: center;	
+}
+.div_footer_div_div_div_p-email2:hover{
 	display: grid;
 	font-size: 60%;
 	color: #fff;
-	margin: 5px 0 0 0;
-	justify-content: center;
-	align-content: center;
+	margin: 0;
+	position: relative;
+	top: 10%;
+	text-align: center;
+	position: sticky;
+	z-index: 10;
+	justify-content: start;
+	align-content: center;	
 }
 
 /*----------------------------------------------------------------------------------------------------*/
@@ -2450,6 +2551,7 @@ div-containerContent_div_h4-positionTheTitleTheArticles{
 	overflow: hidden;
 }
 .div_footer_div_div_a{
+	display: inline-block;
 	margin: 0;
 	color: #0f0;
 	font-size: 50%;
