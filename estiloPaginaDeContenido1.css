@@ -19,7 +19,7 @@ body{
 	object-fit: cover;
 	object-position: top;
 	width: 100%;
-	height: 100%;
+	height: 91.5%;
 	display: grid;
 	position: relative;
 	z-index: 10;
@@ -344,6 +344,9 @@ body{
 	width: 100%;
 	min-width: 240px;
 	height: 100%;
+	background-color: #0000;
+	border: 0;
+	margin: 0;
 	display: grid;
 	grid-column: 1/2;
 	grid-row: 1/2;
@@ -370,12 +373,14 @@ body{
 	display: grid;
 	justify-self: center; 
 	align-self: center;
+	position: relative;
+	z-index: 900;
 }
 .div-containerUpperSectionRender_header_div_div_div_div-facebook{
 	width: 57px;
 	height: 40px;
 	position: relative;
-	z-index: 1;
+	z-index: 910;
 	border-radius: 0 25px;
 	color: #00b;
 	background-color: #00b;/*--------|-------|---------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|*/
@@ -386,7 +391,7 @@ body{
 	background-color: #fff;
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 	position: sticky;
-	z-index: 10;
+	z-index: 920;
 	width: 170px;
 	height: 120px;
 }
@@ -395,7 +400,7 @@ body{
 	height: 40px;
 	display: grid;
 	position: relative;
-	z-index: 3;
+	z-index: 800;
 	background-color: #222;
 	border: 1px solid #999;
 	border-radius: 25px 0;
@@ -410,7 +415,7 @@ body{
 	width: 57px;
 	height: 40px;
 	position: sticky;
-	z-index: 30;
+	z-index: 810;
 	border-radius: 25px 0;
 	clip-path: polygon(36% 20%, 36% 20%, 34% 18.5%, 30% 16%, 30% 15.9%, 25% 13%, 25% 16%, 25% 19%, 25% 23%, 25% 26%, 23.5% 29.3%, 22.3% 31%, 21.3% 33%, 20.3% 37%, 20% 40%, 20% 43%, 20% 45%, 21% 50%, 22% 53%, 25% 57%, 28% 60%, 32% 62%, 36% 63%, 42% 65%, 42% 65%, 41% 66%, 40% 68%, 39% 71%, 38% 72%, 35% 72%, 32% 72%, 30% 70%, 27% 67%, 25% 65%, 22% 63%, 19% 63%, 15% 63%, 12% 64%, 11% 66%, 12% 68%, 16% 68%, 19% 68%, 21% 69%, 23% 71%, 26% 74%, 28% 76%, 31% 78%, 35% 79%, 38% 79%, 38% 94%, 62% 94%, 61.5% 72%, 60% 68%, 58% 66%, 57% 65%, 64% 63.7%, 63% 64%, 66% 63%, 70% 61%, 73% 59%, 76% 55.5%, 77.7% 52%, 78.8% 49%, 79.5% 45%, 79.5% 45%, 79.5% 40%, 78.8% 37%, 77% 33%, 75% 30%, 74% 28%, 74% 26%, 74% 22%, 74% 22%, 74% 19%, 74% 16%, 74% 14%, 72% 15%, 70% 16%, 62% 20%, 65% 19%, 62% 20%, 60% 21%, 58% 20%, 54% 19%, 54% 19%, 46% 19%, 42% 20%, 38% 22%);
 }
@@ -420,7 +425,7 @@ body{
 	color: #fff;
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 	position: sticky;
-	z-index: 30;
+	z-index: 820;
 	width: 170px;
 	height: 120px;
 }
@@ -435,6 +440,8 @@ body{
 	font-size: 16px;
 	justify-self: center; 
 	align-self: center;
+	position: relative;
+	z-index: 600;
 }
 .div-containerUpperSectionRender_header_div_div_div_div-gitlab{
 	border: 1px solid #000;
@@ -443,7 +450,7 @@ body{
 	width: 57px;
 	height: 40px;
 	position: sticky;
-	z-index: 2;
+	z-index: 610;
 	border-radius: 0 25px;
 	clip-path: polygon(16% 0%, 0% 46%, 0% 64%, 50% 100%, 100% 63%, 99% 44%, 84% 0%, 70% 39%, 30% 38%);
 }
@@ -453,7 +460,7 @@ body{
 	color: #fff;
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 	position: sticky;
-	z-index: 10;
+	z-index: 620;
 	width: 170px;
 	height: 120px;
 }
@@ -462,7 +469,7 @@ body{
 	height: 40px;
 	display: grid;
 	position: relative;
-	z-index: 2;
+	z-index: 500;
 	background-color: #fff;
 	color: #000;
 	border: 1px solid #999;
@@ -476,7 +483,7 @@ body{
 	background-color: #0a0;
 	color: #0a0;
 	position: sticky;
-	z-index: 20;
+	z-index: 510;
 	width: 57px;
 	height: 40px;
 	border-radius: 25px 0;
@@ -488,7 +495,7 @@ body{
 	color: #000;
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 	position: sticky;
-	z-index: 20;
+	z-index: 520;
 	width: 170px;
 	height: 120px;
 }
@@ -503,13 +510,15 @@ body{
 	font-size: 16px;
 	justify-self: center; 
 	align-self: center;
+	position: relative;
+	z-index: 400;
 }
 .div-containerUpperSectionRender_header_div_div_div_div-linkedin{
 	border: 1px solid #000;
 	background-color: #fff;
 	color: #fff;
 	position: sticky;
-	z-index: 3;
+	z-index: 410;
 	width: 57px;
 	height: 40px;
 	border-radius: 0 25px;
@@ -521,7 +530,7 @@ body{
 	color: #fff;
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 	position: sticky;
-	z-index: 20;
+	z-index: 420;
 	width: 170px;
 	height: 120px;
 }
@@ -530,7 +539,7 @@ body{
 	height: 40px;
 	display: grid;
 	position: relative;
-	z-index: 1;
+	z-index: 300;
 	background-color: #222;
 	color: #000;
 	border: 1px solid #999;
@@ -544,7 +553,7 @@ body{
 	background-color: #fff;
 	color: #fff;
 	position: sticky;
-	z-index: 10;
+	z-index: 310;
 	width: 57px;
 	height: 40px;
 	border-radius: 25px 0;
@@ -556,9 +565,30 @@ body{
 	color: #fff;
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 	position: sticky;
-	z-index: 10;
+	z-index: 320;
 	width: 170px;
 	height: 120px;
+}
+
+/*----------------------upperSectionContentText----------------------*/
+
+.div-containerUpperSectionRender_header_div_div-text{
+	width: 100%;
+	min-width: 240px;
+	height: 100%;
+	background-color: #0000;
+	border: 0;
+	margin: 0;
+	color: #fff;
+	font-size: 25px;
+	display: grid;
+	grid-column: 2/3;
+	grid-row: 1/2;
+	justify-content: center;
+	align-content: center;
+}
+.div-containerUpperSectionRender_header_div_div-text p{
+	margin: 0;
 }
 
 /*----------------------upperSectionContentAnimation-----------------*/
@@ -566,15 +596,14 @@ body{
 	width: 100%;
 	min-width: 240px;
 	height: 100%;
+	background-color: #0000;
+	border: 0;
+	margin: 0;
 	display: grid;
 	grid-column: 3/4;
 	grid-row: 1/2;
 	grid-template-columns: 100%;
 	grid-template-rows: 100%;
-}
-.div-containerUpperSectionRender_header_div_div_div-animation{
-	width: 100%;
-	height: 100%;
 	background-image: url(cubo/0001.png);
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -597,9 +626,41 @@ body{
 		height: 100%;
 		display: grid;
 		grid-row: 2/3;
-		grid-template-columns: repeat(3,1fr);
+		grid-template-columns: repeat(2,1fr);
 		grid-template-rows: 90% 10%;
-	}	
+	}
+	.div-containerUpperSectionRender_header_div_div-circleCut{
+		width: 100%;
+		height: 100%;/*--------------------------------------------------------*/
+		clip-path: polygon(47.5% 90%,47% 81.8%, 46.5% 72%, 46.2% 54.5%, 46.2% 41.8%, 46.6% 25%, 47.5% 15.5%, 48.5% 8.6%, 50% 11%, 51% 20.3%, 51.2% 24%, 51.6% 36%, 51.6% 77.9%, 51.6% 66%, 51.4% 70.6%, 51% 79.6%, 50% 90.7%, 44.7% 100%, 40% 100%, 100% 100%, 100% 0%, 0% 0%, 0% 100%, 45% 100%, 49% 95%);
+		background-color: blue;
+		display: grid;
+		grid-column: 1/3;
+		grid-row: 2/3;
+	}	/*clip-path: polygon(47.5% 95%,47% 86.8%, 46.5% 77%, 46.2% 59.5%, 46.2% 46.8%, 46.5% 30%, 47.5% 16.5%, 48.5% 13.6%, 50% 16%, 51% 25.3%, 51.2% 29%, 51.6% 41%, 51.6% 62.9%, 51.6% 69%, 51.4% 75.6%, 51% 84.6%, 50% 95.7%, 45.7% 100%, 40% 100%, 100% 100%, 100% 0%, 0% 0%, 0% 100%, 45% 100%, 49% 100%);*/
+	.div-containerUpperSectionRender_header_div_div-animationSection{
+		width: 100%;
+		min-width: 240px;
+		height: 100%;
+		background-color: #0000;
+		border: 0;
+		margin: 0;
+		display: grid;
+		grid-column: 1/3;
+		grid-row: 1/3;
+		grid-template-columns: 100%;
+		grid-template-rows: 100%;
+		position: relative;
+		z-index: 0;
+	}
+	.div-containerUpperSectionRender_header_div_div-animationSection:focus{
+		display: grid;
+		grid-column: 2/3;
+		grid-row: 1/2;
+		position: relative;
+		z-index: 1;
+		background-image: url(cubo/0001.png);
+	}
 }
 
 
