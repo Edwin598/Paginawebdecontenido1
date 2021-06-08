@@ -100,8 +100,8 @@ body{
 	color: #fff;
 	border: 0;
 	border-radius: 5px;
-	width: 250px;
-	height: 58px;
+	width: 250px;/*250px*/
+	height: 58px; /*58px*/
 	display: grid;
 	grid-column: 1/2;
 	grid-row: 1/2;
@@ -114,7 +114,7 @@ body{
 }
 .div-containerUpperSectionRender_header_nav_div_div_button_ul-positionColumn{
 	width: 100%;
-	height: 70%;
+	height: 100%;
 	display: grid;
 	margin: 0 -25%;
 	grid-column: 2/3;
@@ -123,6 +123,7 @@ body{
 	z-index: 60;
 	font-size: 30px;
 	text-decoration: none;
+	overflow: hidden;
 }
 .div-containerUpperSectionRender_header_nav_div_div_button_ul_li_a1:link{
 	text-decoration: none;
@@ -158,6 +159,27 @@ body{
 	height: 100%;
 	position: fixed;
 	z-index: 35;
+}
+@media screen and (min-height:0) and (max-height:570px){
+	.div-containerUpperSectionRender_header_nav_div_div_button_ul-positionColumn{
+		width: 100%;
+		height: 90%;
+		overflow-x: hidden;
+		overflow-y: auto;
+	}
+	.div-containerUpperSectionRender_header_nav_div_div_button_ul-positionColumn::-webkit-scrollbar{
+		width: 8px;
+		height: 8px;
+	}
+	.div-containerUpperSectionRender_header_nav_div_div_button_ul-positionColumn::-webkit-scrollbar-thumb{
+		background-color: #666;
+		border-radius: 4px;
+	}
+	.div-containerUpperSectionRender_header_nav_div_div_button_ul-positionColumn::-webkit-scrollbar-track{
+		background-color: #7f7f9e99;
+		border-radius: 4px;
+		width: 20px;
+	}
 }
 
 /*----------------------upperSectionNavbarSecondMenu-----------------------*/
@@ -216,36 +238,42 @@ body{
 	display: grid;
 	grid-column: 1/2;
 	grid-row: 1/2;
-	grid-template-columns:  repeat(2,10% 90%);
-	grid-template-rows: 58px 5%;
+	grid-template-columns:  50px 90%;
+	grid-template-rows: 58px;
 	overflow: scroll;
 	overflow: hidden;
 	position: relative;
 	z-index: 80;
+	padding: 0;
 }
 .div-containerUpperSectionRender_header_nav_div_button_p-pointText2{
-	width: 100%;
+	width: 50px;
 	height: 100%;
 	font-size: 35px;
 	margin: 0;
-	padding: 0 0 0 5px;
+	padding: 0;
 	display: grid;
 	grid-column: 1/2;
 	grid-row: 1/2;
-	justify-items: start;
+	justify-items: center;
 }
 .div-containerUpperSectionRender_header_nav_div_div_button_ol-positionRow{
-	list-style: none;
+	list-style: none; 
+	height: 58px;
 	display: grid;
-	justify-self: start;
-	align-self: center;
-	grid-column: 1/2;
+	grid-column: 2/3;
 	grid-row: 1/2;
-	grid-template-columns: repeat(10,80px);
+	text-align: start;
+	align-content: center;
+	grid-template-columns: repeat(5,90px);/*repeat(10,80px)*/
+	grid-template-rows: auto;
 	position: relative;
 	z-index: 90;
 	font-size: 15px;
 	align-items: center;
+	overflow: hidden;
+	padding: 0;
+	margin: 0 45px 0 0;
 }
 .div-containerUpperSectionRender_header_nav_div_div_button_ul_li_a2:link{
 	text-decoration: none;
@@ -254,9 +282,9 @@ body{
 	text-decoration: none;
 }
 .div-containerUpperSectionRender_header_nav_div_div_button_ul_li_a_p2{
-	width: max-content;
+	width: min-content;
 	left: 20px;
-	margin: 0 0 0 10px;
+	margin: 0;
 	display: grid;
 	color: #fff;
 	justify-content: start;
@@ -275,10 +303,30 @@ body{
 	background-color: #3d3b5acc;
 	transition-duration: 0.3s;
 	width: 100%;
-	height: 100%;		/*Con mediaquerys se tiene que poder ver el overflow ya que con algunas resoluciones no se alcanza a ver todo el contenido*/
-	position: relative;
+	height: 100%;
+	position: sticky;
 	z-index: 60;
 }
+@media screen and (min-width:0) and (max-width:522px){
+	.div-containerUpperSectionRender_header_nav_div_div_button_ol-positionRow{
+		overflow-x: auto;
+		overflow-y: hidden;
+	}
+	.div-containerUpperSectionRender_header_nav_div_div_button_ol-positionRow::-webkit-scrollbar{
+		width: 8px;
+		height: 8px;
+	}
+	.div-containerUpperSectionRender_header_nav_div_div_button_ol-positionRow::-webkit-scrollbar-thumb{
+		background-color: #666;
+		border-radius: 4px;
+	}
+	.div-containerUpperSectionRender_header_nav_div_div_button_ol-positionRow::-webkit-scrollbar-track{
+		background-color: #5f5d7c77;
+		border-radius: 4px;
+		width: 20px;
+	}
+}
+
 /*------------------------upperSectionContent------------------------------*/
 
 .div-containerUpperSectionRender_header_div-content{
@@ -294,14 +342,16 @@ body{
 
 .div-containerUpperSectionRender_header_div_div-contacts{
 	width: 100%;
+	min-width: 240px;
 	height: 100%;
 	display: grid;
+	grid-column: 1/2;
 	grid-row: 1/2;
 	grid-template-columns: repeat(2,1fr);
 	grid-template-rows: repeat(4,25%);
 }
 .div-containerUpperSectionRender_header_div_div_div-contactInfo{
-	width: minmax(min-content,max-content);
+	width: max-content;
 	color: #fff;
 	font-size: 20px;
 	display: grid;
@@ -513,9 +563,12 @@ body{
 
 /*----------------------upperSectionContentAnimation-----------------*/
 .div-containerUpperSectionRender_header_div_div-animationSection{
-	widt: 100%;
+	width: 100%;
+	min-width: 240px;
 	height: 100%;
 	display: grid;
+	grid-column: 3/4;
+	grid-row: 1/2;
 	grid-template-columns: 100%;
 	grid-template-rows: 100%;
 }
@@ -536,6 +589,20 @@ body{
 	animation-direction: alternate-reverse;
 	animation-iteration-count: infinite;
 }
+
+
+@media screen and (min-width: 481px) and (max-width: 719px){	
+	.div-containerUpperSectionRender_header_div-content{
+		width: 100%;
+		height: 100%;
+		display: grid;
+		grid-row: 2/3;
+		grid-template-columns: repeat(3,1fr);
+		grid-template-rows: 90% 10%;
+	}	
+}
+
+
 @keyframes movimientoDeCubo{
 	0.3%{
 		background-image: url(cubo/0001.png);
@@ -1742,33 +1809,35 @@ body{
 		background-size: contain;
 	}
 }
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------*/
 /*---------------------containerContentpage------------------------*/
 
 .div_containerContent{
-        grid-template-columns:repeat(auto-fill,minmax(100px,1fr));
+	grid-template-columns:repeat(auto-fill,minmax(100px,1fr));
         position:relative;
         background-color:#fff;
         text-align:center;
         border:1px solid #000;
         overflow:hidden;
-        margin:0 auto;
-        max-width:50%;
-        width:50%;
+        margin:0 rigth;
+        width:70%;
 }
-
-main h1{display:grid;
+@media screen and (max-width:800px){
+        .div_containerContent{
+                width:100%
+	}
+}
+main h1{
+	display:grid;
         height:100%
         margin:30px;
         font-size:40px;
         font-family: 'Roboto', sans-serif;
         font-family: 'Roboto Condensed', sans-serif;
         width:100%;
-
-
 }
-
-
 main .div_containerContent_div-paragraphMain{
         display:grid;
         font-size:40px;
@@ -1776,27 +1845,22 @@ main .div_containerContent_div-paragraphMain{
         width:100%;
         height:100%;
         min-content:100px;
-
 }
 .div-containerContent_div_main_div_article_section-position h2{
         margin:20px;
         font-size:30px;
-
 }
-
 .div-containerContent_div_main_div_article_section-position_div-contentCircle{
         display:grid;
         grid-template-columns:repeat(auto-fill, minmax(300px,1fr));
         width:100%;
         justify-content:center;
 }
-
 .div-containerContent_div_main_div_article_section-position_div-contentCircle p{
                 display:grid;
                 grid-template-columns:repeat(auto-fill, minmax(150px,1fr));
                 margin:20px;
 }
-
 .div-containerContent_div_main_div_article_section-position_div-contentCircle img{
         display:grid;
         margin:20px;
@@ -1805,14 +1869,8 @@ main .div_containerContent_div-paragraphMain{
         top:20px;
         width:50%;
         height:70%;
-
-
 }
-
-
-
-.div-containerContent_div_main_ol-smallGalleryInTheMain
-{
+.div-containerContent_div_main_ol-smallGalleryInTheMain{
         display:grid;
         border:1px dashed #000;
         margin:0 auto;
@@ -1824,127 +1882,21 @@ main .div_containerContent_div-paragraphMain{
         height:150px;
         overflow:scroll;
         justify-content:center;
-
-
-        }
-
+}
 .div-containerContent_div_main_ol-smallGalleryInTheMain_img-image1{
         width:100%;
         height:100%;
 }
-
 .div-containerContent_div_main_ol-smallGalleryInTheMain_img-image2{
         width:100%;
         height:100%;
 }
-
 .div-containerContent_div_main_ol-smallGalleryInTheMain_img-image3{
         width:100%;
         height:100%;
 }
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-
-.div_containerContent{
-        display:grid
-        grid-template-columns:repeat(auto-fill, minmax(100px,1fr));
-        position:relative;
-        background-color:#fff;
-        justify-items:center;
-        text-align:center;
-        border:1px solid #000;
-        overflow:hidden;
-        margin:0 auto;
-        max-width:50%;
-        width:50%;
-
-}
-
-main h1{display:grid;
-        height:100%
-        margin:30px;
-        font-size:40px;
-        font-family: 'Roboto', sans-serif;
-        font-family: 'Roboto Condensed', sans-serif;
-        width:100%;
-
-
-}
-
-
-main .div_containerContent_div-paragraphMain{
-        display:grid;
-        font-size:40px;
-        flex-shrink:0;
-        width:100%;
-        height:100%;
-        min-content:100px;
-
-}
-.div-containerContent_div_main_div_article_section-position h2{
-        margin:20px;
-        font-size:30px;
-
-}
-
-.div-containerContent_div_main_div_article_section-position_div-contentCircle{
-        display:grid;
-        grid-template-columns:repeat(auto-fill, minmax(300px,1fr));
-        width:100%;
-        justify-content:center;
-}
-
-.div-containerContent_div_main_div_article_section-position_div-contentCircle p{
-                display:grid;
-                grid-template-columns:repeat(auto-fill, minmax(150px,1fr));
-                margin:20px;
-}
-
-.div-containerContent_div_main_div_article_section-position_div-contentCircle img{
-        display:grid;
-        margin:20px;
-        position:relative;
-        margin:0 auto;
-        top:20px;
-        width:50%;
-        height:70%;
-
-
-}
-
-
-
-.div-containerContent_div_main_ol-smallGalleryInTheMain
-{
-        display:grid;
-        border:1px dashed #000;
-        margin:0 auto;
-        grid-template-columns:repeat(auto-fill,mimax(10px,1fr));
-        position:relative;
-        bottom:5px;
-        width:30%;
-        padding:10px;
-        height:150px;
-        overflow:scroll;
-        justify-content:center;
-
-
-        }
-
-.div-containerContent_div_main_ol-smallGalleryInTheMain_img-image1{
-        width:100%;
-        height:100%;
-}
-
-.div-containerContent_div_main_ol-smallGalleryInTheMain_img-image2{
-        width:100%;
-        height:100%;
-}
-
-.div-containerContent_div_main_ol-smallGalleryInTheMain_img-image3{
-        width:100%;
-        height:100%;
-}
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .div-containerContent_div-backgrundContainerWindows h4{
         background-color:#Fa5533;
@@ -1954,7 +1906,6 @@ main .div_containerContent_div-paragraphMain{
         padding:15px;
         border-radius:10px;
 }
-
 .div-containerContent_div-backgrundContainerWindows h4:hover{
         background-color:#FF9999;
 }
@@ -1965,7 +1916,6 @@ main .div_containerContent_div-paragraphMain{
         margin:0 auto;
         justify-content:center;
 }
-
 .div-containerContent_div_h4-positionTheTitleTheArticles_div-clipPathFlecha{
         display:grid;
         background-color:#000;
@@ -1977,19 +1927,16 @@ div-containerContent_div_h4-positionTheTitleTheArticles{
         padding:20px;
         text-align:center;
 }
-
 .div-containerContent_div_h4-positionTheTitleTheArticles{
         font-size:20px;
         text-align:center;
 }
-
 .div-containerContent_div_h4-positionTheTitleTheArticles p{
         background-color:#000;
         width:5%;
         margin:0 auto;
         clip-path: polygon(36% 0, 71% 0, 71% 57%, 98% 58%, 46% 100%, 49% 100%, 7% 58%, 36% 57%);
 }
-
 .div-containerContent_div_div_div-sections{
         display:grid;
         justify-content:center;
@@ -1998,85 +1945,53 @@ div-containerContent_div_h4-positionTheTitleTheArticles{
         margin:0 auto;
         padding:20px;
         grid-template-columns:repeat(auto-fill,minmax(50px,100px));
-
-
-
-
 }
-
 .div-containerContent_div-sections_aside-position1{
         width:100px;
         height:40px;
         background-color:#CD853F;
 }
-
-
-
 .div-containerContent_div-sections_aside-position1 a {
         text-decoration:none;
         color:#000;
-
-
-
 }
-
 .div-containerContent_div-sections_aside-position2{
         width:100px;
         height:40px;
         background-color:#CD853F;
 }
-
-
 .div-containerContent_div-sections_aside-position2 a{
         color:#000;
         width:100%;
         text-decoration:none;
-
 }
-
 .div-containerContent_div-sections_aside-position3{
         width:100px;
         height:40px;
         background-color:#CD853F;
-
-
 }
-
 .div-containerContent_div-sections_aside-position3 a{
         color:#000;
         text-decoration:none;
-
-
 }
 .div-containerContent_div-sections_aside-position4{
         width:100px;
         height:40px;
         background-color:#CD853F;
-
-
 }
-
 .div-containerContent_div-sections_aside-position4 a{
         color:#000;
         text-decoration:none;
-
 }
-
 .div-containerContent_div-sections_aside-position5{
         width:100px;
         height:40px;
         background-color:#CD853F;
-
-
 }
-
-
 .div-containerContent_div-sections_aside-position5 a {
         color:#000;
         text-decoration:none;
-
 }
-
 .div-containerContent_div-contenedorDeGoogle{
         display:grid;
         width:100%;
@@ -2085,30 +2000,68 @@ div-containerContent_div_h4-positionTheTitleTheArticles{
         margin:0 auto;
         background-color:#222;
 }
-
+/*--------------------------------------------------------------containersOfGoogleAds-----------------------------------------------------------------------------------------*/
+.div_containerContent_div-containerOfGoogleAds_div-containerFirst{
+        display:grid;
+        background-color:#467;
+        width:20%;
+        position:absolute;
+        bottom:90px;
+        left:73%;
+        margin:25px;
+        height:300px;
+}
+.div_containerContent_div-containerOfGoogleAds_div-containerSecond{
+        background-color:#467;
+        width:20%;
+        position:absolute;
+        bottom:-300px;
+        left:73%;
+        height:300px;
+        margin:25px;
+}
+@media screen and (max-width:800px){
+	.div_containerContent_div-containersOfGoogleAds{
+        	display:grid;
+        	grid-template-columns:100%;
+        	grid-template-rows:repeat(auto-fill,minmax(10px,100%));
+        	grid-row-gap:30px;
+        	margin-top:20px;
+        	margin-bottom:20px;
+	}
+}
+.div_containerContent_div-containerOfGoogleAds_div-containerFirst{
+        display:grid;
+        position:static;
+        margin:0 auto;
+        width:50%;
+        background-color:#467;
+}
+.div_containerContent_div-containerOfGoogleAds_div-containerSecond{
+        display:grid;
+        width:50%;
+        margin:0 auto;
+        position:static;
+        background-color:#467;
+}
 
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-
-
 /*---------------------------------------------------------footer--------------------------------------------------------*/
-.grov{
-	height: 340px;
-}
 .div_footer-lowerSection{
-	width: 100%;
-	height: 100%;
+        width: 100%;
+        height: 100%;
         display:grid;
         background-color: #21213b;
         color:#fff;
         font-size: 30px;
-	grid-template-columns: 1% 40% 59%;
-        grid-template-rows: 100%;
-	margin: 0;
-	padding: 0;
+        grid-template-columns: 1% 40% 59%; /*1% 40% 59%*/
+        grid-template-rows: 100%;/*100%*/
+        margin: 0;
+        padding: 0;
 }
 
-/*-------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------firstSection----------------------------------------------------*/
 
 .div_footer_div-firstSection{         /*agrandar un poco mas el espacion de firstSection con media querys*/
 	background-color: #cc3511;/*bb2400*/
@@ -2429,12 +2382,12 @@ div-containerContent_div_h4-positionTheTitleTheArticles{
 	overflow: hidden;
 	margin: 0;
 }
-.div_footer_div_div_div_p-email1{
+.div_footer_div_div_div-emailContent p{
 	display: grid;
 	grid-column: 1/2;
 	grid-row: 1/2;
 	font-size: 60%;
-	color: transparent;
+	color: #fff;
 	margin: 0;
 	text-align: center;
 	position: relative;
@@ -2443,79 +2396,8 @@ div-containerContent_div_h4-positionTheTitleTheArticles{
 	justify-content: start;
 	align-content: center;
 }
-.div_footer_div_div_div_p-email1::after{
-	content: "Colaborador1";
-	display: grid;
-	grid-column: 1/2;
-	grid-row: 1/2;
-	font-size: 100%;
-	color: #fff;
-	margin: 0;
-	position: relative;
-	top: 0;
-	text-align: center;
-	justify-content: start;
-	align-content: center;
-}
-.div_footer_div_div_div_p-email1:hover{
-	width: 100%;
-	height: 0px;
-	display: grid;
-	grid-column: 1/2;
-	grid-row: 1/2;
-	font-size: 60%;
-	color: #fff;
-	margin: 0;
-	position: relative;
-	top: 59%;
-	text-align: center;
-	justify-content: start;
-	align-content: center;	
-}
-.div_footer_div_div_div_p-email2{
-	display: grid;
-	grid-column: 1/2;
-	grid-row: 2/3;
-	position: sticky;
-	font-size: 60%;
-	color: transparent;
-	margin: 0;
-	position: relative;
-	top: 10%;
-	text-align: center;
-	z-index: 1;
-	justify-content: start;
-	align-content: center;	
-}
-.div_footer_div_div_div_p-email2::after{
-	content: "Colaborador2";
-	display: grid;
-	grid-column: 1/2;
-	grid-row: 1/2;
-	font-size: 100%;
-	color: #fff;
-	margin: 0;
-	position: relative;
-	top: 10%;
-	text-align: center;
-	justify-content: start;
-	align-content: center;	
-}
-.div_footer_div_div_div_p-email2:hover{
-	display: grid;
-	font-size: 60%;
-	color: #fff;
-	margin: 0;
-	position: relative;
-	top: 10%;
-	text-align: center;
-	position: sticky;
-	z-index: 10;
-	justify-content: start;
-	align-content: center;	
-}
 
-/*----------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------secondSection-------------------------------------------*/
 
 .div_footer_div-secondSection{
 	position: relative;
