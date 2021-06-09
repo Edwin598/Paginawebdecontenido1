@@ -7,6 +7,7 @@ body{
 /*-----------------------------upperSection--------------------------------*/
 
 .div-containerUpperSectionRender{
+	background-color: #3d3b5a;
 	width: 100%;
 	height: 300px;
 	margin: 0;
@@ -19,7 +20,7 @@ body{
 	object-fit: cover;
 	object-position: top;
 	width: 100%;
-	height: 91.5%;
+	height: 100%;
 	display: grid;
 	position: relative;
 	z-index: 10;
@@ -352,6 +353,8 @@ body{
 	grid-row: 1/2;
 	grid-template-columns: repeat(2,1fr);
 	grid-template-rows: repeat(4,25%);
+	position: relative;
+	z-index: 100;
 }
 .div-containerUpperSectionRender_header_div_div_div-contactInfo{
 	width: max-content;
@@ -586,6 +589,8 @@ body{
 	grid-row: 1/2;
 	justify-content: center;
 	align-content: center;
+	position: relative;
+	z-index: 100;
 }
 .div-containerUpperSectionRender_header_div_div-text p{
 	margin: 0;
@@ -607,7 +612,6 @@ body{
 	background-image: url(cubo/0001.png);
 	background-size: contain;
 	background-repeat: no-repeat;
-	display: grid;
 }
 .div-containerUpperSectionRender_header_div_div_div-animation:hover{
 	width: 90%;
@@ -620,7 +624,7 @@ body{
 }
 
 
-@media screen and (min-width: 481px) and (max-width: 719px){	
+@media screen and (min-width: 481px) and (max-width: 719px){
 	.div-containerUpperSectionRender_header_div-content{
 		width: 100%;
 		height: 100%;
@@ -629,11 +633,14 @@ body{
 		grid-template-columns: repeat(2,1fr);
 		grid-template-rows: 90% 10%;
 	}
+	.div-containerUpperSectionRender_img{
+		height: 91.5%;
+	}
 	.div-containerUpperSectionRender_header_div_div-circleCut{
 		width: 100%;
 		height: 100%;/*--------------------------------------------------------*/
 		clip-path: polygon(47.5% 90%,47% 81.8%, 46.5% 72%, 46.2% 54.5%, 46.2% 41.8%, 46.6% 25%, 47.5% 15.5%, 48.5% 8.6%, 50% 11%, 51% 20.3%, 51.2% 24%, 51.6% 36%, 51.6% 77.9%, 51.6% 66%, 51.4% 70.6%, 51% 79.6%, 50% 90.7%, 44.7% 100%, 40% 100%, 100% 100%, 100% 0%, 0% 0%, 0% 100%, 45% 100%, 49% 95%);
-		background-color: blue;
+		background-color: #4e4c6bdd;/*#8bd3f855*/
 		display: grid;
 		grid-column: 1/3;
 		grid-row: 2/3;
@@ -642,7 +649,6 @@ body{
 		width: 100%;
 		min-width: 240px;
 		height: 100%;
-		background-color: #0000;
 		border: 0;
 		margin: 0;
 		display: grid;
@@ -652,6 +658,7 @@ body{
 		grid-template-rows: 100%;
 		position: relative;
 		z-index: 0;
+		background-image: none;
 	}
 	.div-containerUpperSectionRender_header_div_div-animationSection:focus{
 		display: grid;
@@ -660,9 +667,123 @@ body{
 		position: relative;
 		z-index: 1;
 		background-image: url(cubo/0001.png);
+		position: relative;
+		z-index: 110
 	}
 }
-
+@media screen and (min-width: 0) and (max-width: 479px){	
+	.div-containerUpperSectionRender{
+		background-color: #8a87a9;
+		display: grid;
+		grid-template-columns: 10% 80% 10%;
+		grid-template-rows: 100%;
+	}
+	.div-containerUpperSectionRender_img{
+		display: grid;
+		position: relative;
+		z-index: 10;
+		grid-column: 2/3;
+		grid-row: 1/2;
+	}
+	.div-containerUpperSectionRender_header-glass{
+		background-color: #0c0c2299;
+		width: 100%;
+		height: 100%;
+		grid-column: 1/4;
+		grid-row: 1/2;
+		grid-template-columns: 10% 80% 10%;
+		grid-template-rows: 58px 1fr;
+		display: grid;
+		position: relative;
+		z-index: 20;
+	}
+	.div-containerUpperSectionRender_header_div-content{
+		display: grid;
+		grid-column: 1/4;
+		grid-template-columns: 10% 80% 10%;
+		grid-template-rows: 100% ;
+	}
+	.div-containerUpperSectionRender_header_div_div-contacts{
+		display: grid;
+		grid-column: 2/3;
+		grid-row: 1/2;
+		position: relative;
+		z-index: 100;
+	}
+	.div-containerUpperSectionRender_header_div_div-text{
+		color: #fff0;
+		display: grid;
+		grid-column: 2/4;
+		grid-row: 1/2;
+		position: relative;
+		z-index: 90;
+	}
+	.div-containerUpperSectionRender_header_div_div-text:focus{
+		background-color: #000;
+		color: #fff;
+		display: grid;
+		grid-column: 2/3;
+		grid-row: 1/2;
+		position: relative;
+		z-index: 110;
+		transition-duration: 0.5s;
+	}
+	.div-containerUpperSectionRender_header_div_div-animationSection{
+		display: grid;
+		grid-column: 2/4;
+		grid-row: 1/2;
+		position: relative;
+		z-index: 80;
+		background-image: none;
+	}
+	.div-containerUpperSectionRender_header_div_div-animationSection:focus{
+		display: grid;
+		grid-column: 2/4;
+		grid-row: 1/2;
+		position: relative;
+		z-index: 110;
+		background-image: url(cubo/0001.png);
+		width: 90%;
+		height: 95%;
+		display: grid;
+		animation-name: movimientoDeCubo;
+		animation-duration: 5s;
+		animation-direction: alternate-reverse;
+		animation-iteration-count: infinite;
+	}
+	.div-containerUpperSectionRender_header_div_div-rowCutFirst{
+		width: 100%;
+		height: 100%;
+		background-color: green;
+		display: grid;
+		grid-column: 1/2;
+		grid-row: 2/3;
+	}
+	.div-containerUpperSectionRender_header_div_div-rowCutSecond{
+		width: 100%;
+		height: 100%;
+		background-color: #000;
+		display: grid;
+		grid-column: 3/4;
+		grid-row: 1/2;
+		position: relative;
+		z-index: 110;
+		clip-path: polygon(31% 50%, 31% 60%, 88% 50%, 31% 40%, 44% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 0%, 45% 0%, 31% 40%);
+	}
+	.div-containerUpperSectionRender_header_div_div-circleCut{
+		width: 100%;
+		height: 100%;
+		background-color: #000;
+		transform: rotate(180deg);
+		display: grid;
+		grid-column: 1/2;
+		grid-row: 1/2;
+		position: relative;
+		z-index: 110;
+		clip-path: polygon(31% 50%, 31% 60%, 88% 50%, 31% 40%, 44% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 0%, 45% 0%, 31% 40%);
+		
+	}
+}
 
 @keyframes movimientoDeCubo{
 	0.3%{
