@@ -46,7 +46,7 @@ body{
 	width: 100%;
 	height: 58px;
 	position: fixed;
-	z-index: 10;
+	z-index: 2000;
 	display: grid; 
 	grid-template-columns: 100%;
 	grid-template-rows: 100%;
@@ -115,7 +115,7 @@ body{
 }
 .div-containerUpperSectionRender_header_nav_div_div_button_ul-positionColumn{
 	width: 100%;
-	height: 100%;
+	height: 1fr;
 	display: grid;
 	margin: 0 -25%;
 	grid-column: 2/3;
@@ -140,7 +140,7 @@ body{
 	font-size: 1fr;
 }
 .div-containerUpperSectionRender_header_nav_div_div_button_ul_li_a_p1:hover{
-	background-color: #6f6e8dbb;
+	background-color: #8f8fafbb;
 	border-radius: 15%;
 }
 .div-containerUpperSectionRender_header_nav_div_div_button-open1:hover{
@@ -379,6 +379,12 @@ body{
 	position: relative;
 	z-index: 900;
 }
+.div-containerUpperSectionRender_header_div_div_div_div-facebook a p{
+	color: #00b;
+}
+.div-containerUpperSectionRender_header_div_div_div_div-facebook a{
+	text-decoration: none;
+}
 .div-containerUpperSectionRender_header_div_div_div_div-facebook{
 	width: 57px;
 	height: 40px;
@@ -411,6 +417,12 @@ body{
 	justify-self: start; 
 	align-self: center;
 }
+.div-containerUpperSectionRender_header_div_div_div_div-github a p{
+	color: #fff;
+}
+.div-containerUpperSectionRender_header_div_div_div_div-github a{
+	text-decoration: none;
+}
 .div-containerUpperSectionRender_header_div_div_div_div-github{
 	border: 1px solid #000;
 	background-color: #fff;
@@ -429,8 +441,8 @@ body{
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 	position: sticky;
 	z-index: 820;
-	width: 170px;
-	height: 120px;
+	width: 110px;
+	height: 80px;
 }
 .div-containerUpperSectionRender_header_div_div_div-contactsGitlab{
 	width: 57px;
@@ -446,6 +458,12 @@ body{
 	position: relative;
 	z-index: 600;
 }
+.div-containerUpperSectionRender_header_div_div_div_div-gitlab a p{
+	color: #b50;
+}
+.div-containerUpperSectionRender_header_div_div_div_div-gitlab a{
+	text-decoration: none;
+}
 .div-containerUpperSectionRender_header_div_div_div_div-gitlab{
 	border: 1px solid #000;
 	background-color: #b50;
@@ -458,14 +476,14 @@ body{
 	clip-path: polygon(16% 0%, 0% 46%, 0% 64%, 50% 100%, 100% 63%, 99% 44%, 84% 0%, 70% 39%, 30% 38%);
 }
 .div-containerUpperSectionRender_header_div_div_div_div-gitlab:hover{
-	border: 1px solid #777;
+	border: 1px solid #fff;
 	background-color: #000;
 	color: #fff;
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 	position: sticky;
 	z-index: 620;
-	width: 170px;
-	height: 120px;
+	width: 110px;
+	height: 80px;
 }
 .div-containerUpperSectionRender_header_div_div_div-contactsWhatsapp{
 	width: 57px;
@@ -516,6 +534,12 @@ body{
 	position: relative;
 	z-index: 400;
 }
+.div-containerUpperSectionRender_header_div_div_div_div-linkedin a p{
+	color: #fff;
+}
+.div-containerUpperSectionRender_header_div_div_div_div-linkedin a{
+	text-decoration: none;
+}
 .div-containerUpperSectionRender_header_div_div_div_div-linkedin{
 	border: 1px solid #000;
 	background-color: #fff;
@@ -534,8 +558,8 @@ body{
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 	position: sticky;
 	z-index: 420;
-	width: 170px;
-	height: 120px;
+	width: 110px;
+	height: 80px;
 }
 .div-containerUpperSectionRender_header_div_div_div-contactsEmail{
 	width: 57px;
@@ -547,7 +571,7 @@ body{
 	color: #000;
 	border: 1px solid #999;
 	border-radius: 25px 0;
-	font-size: 16px;
+	font-size: 5px;
 	justify-self: start; 
 	align-self: center;
 }
@@ -563,14 +587,15 @@ body{
 	clip-path: polygon(90% 21%, 9% 21%, 9% 70%, 9% 75%, 91% 75%, 91% 26%, 63% 48%, 91% 70%, 91% 75%, 61% 50%, 50% 57%, 39% 50%, 9% 75%, 9% 71%, 37% 48%, 9% 25%, 9% 21%, 50% 54%, 91% 21%);
 }
 .div-containerUpperSectionRender_header_div_div_div_div-email:hover{
-	border: 1px solid #000;
+	border: 1px solid #fff;
 	background-color: #000;
 	color: #fff;
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 	position: sticky;
 	z-index: 320;
-	width: 170px;
-	height: 120px;
+	width: 290px;
+	height: 90px;
+	font-size: 16px;
 }
 
 /*----------------------upperSectionContentText----------------------*/
@@ -624,7 +649,13 @@ body{
 }
 
 
-@media screen and (min-width: 481px) and (max-width: 719px){
+@media screen and (min-width: 480px) and (max-width: 719px){
+	.div-containerUpperSectionRender{
+		animation-name: degradadoDeColor;
+		animation-duration: 2s;
+		animation-direction: alternate-reverse;
+		animation-iteration-count: infinite;
+	}
 	.div-containerUpperSectionRender_header_div-content{
 		width: 100%;
 		height: 100%;
@@ -640,7 +671,7 @@ body{
 		width: 100%;
 		height: 100%;/*--------------------------------------------------------*/
 		clip-path: polygon(47.5% 90%,47% 81.8%, 46.5% 72%, 46.2% 54.5%, 46.2% 41.8%, 46.6% 25%, 47.5% 15.5%, 48.5% 8.6%, 50% 11%, 51% 20.3%, 51.2% 24%, 51.6% 36%, 51.6% 77.9%, 51.6% 66%, 51.4% 70.6%, 51% 79.6%, 50% 90.7%, 44.7% 100%, 40% 100%, 100% 100%, 100% 0%, 0% 0%, 0% 100%, 45% 100%, 49% 95%);
-		background-color: #4e4c6bdd;/*#8bd3f855*/
+		background-color: #1e1f26;/*#8bd3f855*/
 		display: grid;
 		grid-column: 1/3;
 		grid-row: 2/3;
@@ -673,10 +704,15 @@ body{
 }
 @media screen and (min-width: 0) and (max-width: 479px){	
 	.div-containerUpperSectionRender{
+		width: 100%;
 		background-color: #8a87a9;
 		display: grid;
 		grid-template-columns: 10% 80% 10%;
 		grid-template-rows: 100%;
+		animation-name: degradadoDeColor;
+		animation-duration: 2s;
+		animation-direction: alternate-reverse;
+		animation-iteration-count: infinite;
 	}
 	.div-containerUpperSectionRender_img{
 		display: grid;
@@ -704,19 +740,135 @@ body{
 		grid-template-rows: 100% ;
 	}
 	.div-containerUpperSectionRender_header_div_div-contacts{
+		width: 1fr;
+		min-width: 150px;
+		height: 100%;
 		display: grid;
 		grid-column: 2/3;
-		grid-row: 1/2;
+		grid-row: 1/3;
 		position: relative;
 		z-index: 100;
 	}
+	.div-containerUpperSectionRender_header_div_div_div-contactInfo{
+		width: min-content;
+		color: #fff;
+		align-self: center;
+		font-size: 20px;
+		display: grid;
+		grid-column: 1/3;
+		position: relative;
+		left: 5%;
+	}
+	.div-containerUpperSectionRender_header_div_div_div-contactsFacebook{
+		display: grid;
+		justify-self: start;
+	}
+	.div-containerUpperSectionRender_header_div_div_div_div-facebook{
+		overflow: hidden;
+		color: #000;
+	}
+	.div-containerUpperSectionRender_header_div_div_div_div-facebook:hover{
+		overflow: auto;
+	}
+	.div-containerUpperSectionRender_header_div_div_div_div-facebook:hover{
+		width: 90px;
+		height: 65px;
+		font-size: 12px;
+	}
+	.div-containerUpperSectionRender_header_div_div_div_div-github{
+		overflow: hidden;
+	}
+	.div-containerUpperSectionRender_header_div_div_div_div-github:hover{
+		overflow: auto;
+	}
+	.div-containerUpperSectionRender_header_div_div_div_div-github:hover{
+		width: 90px;
+		height: 65px;
+		font-size: 12px;
+	}
+	.div-containerUpperSectionRender_header_div_div_div-contactsGitlab{
+		display: grid;
+		border-radius: 25px 0;
+		justify-self: start; 
+		align-self: center;
+		z-index: 310;
+		transition-duration: 1s;
+	}
+	.div-containerUpperSectionRender_header_div_div_div_div-gitlab{
+		overflow: hidden;
+	}
+	.div-containerUpperSectionRender_header_div_div_div_div-gitlab:hover{
+		overflow: auto;
+	}
+	.div-containerUpperSectionRender_header_div_div_div_div-gitlab:hover{
+		width: 90px;
+		height: 65px;
+		border-radius: 25px 0;
+		botton: 0px;
+		font-size: 12px;
+	}
+	.div-containerUpperSectionRender_header_div_div_div-contactsWhatsapp{
+		display: grid;
+		grid-column: 1/2;
+		grid-row: 3/4;
+		border-radius: 0 25px;
+		justify-self: start;
+		align-self: center;
+	}
+	.div-containerUpperSectionRender_header_div_div_div_div-whatsapp:hover{
+		width: 110px;
+		height: 95px;
+		border-radius: 0 25px;
+		font-size: 12px;
+	}
+	.div-containerUpperSectionRender_header_div_div_div-contactsLinkedin{
+		display: grid;
+		border-radius: 25px 0;
+		font-size: 16px;
+		justify-self: start; 
+		align-self: center;
+		z-index: 300;
+	}
+	
+	.div-containerUpperSectionRender_header_div_div_div_div-linkedin{
+		overflow: hidden;
+	}
+	.div-containerUpperSectionRender_header_div_div_div_div-linkedin:hover{
+		overflow: auto;
+	}
+	.div-containerUpperSectionRender_header_div_div_div_div-linkedin:hover{
+		width: 90px;
+		height: 65px;
+		font-size: 12px;
+		border-radius: 25px 0;
+	}
+	.div-containerUpperSectionRender_header_div_div_div-contactsEmail{
+		display: grid;
+		grid-column: 1/2;
+		grid-row: 4/5;
+		border-radius: 0 25px;
+		font-size: 5px;
+		justify-self: start; 
+		align-self: center;
+	}
+	.div-containerUpperSectionRender_header_div_div_div_div-email:hover{
+		display: inline-block;
+		width: 175px;
+		height: 55px;
+		font-size: 10px;
+		border-radius: 0 25px;
+	}
 	.div-containerUpperSectionRender_header_div_div-text{
+		width: 100%;
+		min-width: 150px;
+		height: 100%;
 		color: #fff0;
 		display: grid;
 		grid-column: 2/4;
 		grid-row: 1/2;
 		position: relative;
 		z-index: 90;
+		font-size: 20px;
 	}
 	.div-containerUpperSectionRender_header_div_div-text:focus{
 		background-color: #000;
@@ -729,6 +881,9 @@ body{
 		transition-duration: 0.5s;
 	}
 	.div-containerUpperSectionRender_header_div_div-animationSection{
+		width: 1fr;
+		min-width: 150px;
+		height: 90%;
 		display: grid;
 		grid-column: 2/4;
 		grid-row: 1/2;
@@ -738,7 +893,7 @@ body{
 	}
 	.div-containerUpperSectionRender_header_div_div-animationSection:focus{
 		display: grid;
-		grid-column: 2/4;
+		grid-column: 2/3;
 		grid-row: 1/2;
 		position: relative;
 		z-index: 110;
@@ -754,15 +909,20 @@ body{
 	.div-containerUpperSectionRender_header_div_div-rowCutFirst{
 		width: 100%;
 		height: 100%;
-		background-color: green;
+		background-color: #1e1f26;
 		display: grid;
 		grid-column: 1/2;
-		grid-row: 2/3;
+		grid-row: 1/2;
+		transform: rotate(180deg);
+		position: relative;
+		z-index: 110;
+		clip-path: polygon(31% 50%, 31% 60%, 88% 50%, 31% 40%, 44% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 0%, 45% 0%, 31% 40%);
+
 	}
 	.div-containerUpperSectionRender_header_div_div-rowCutSecond{
 		width: 100%;
 		height: 100%;
-		background-color: #000;
+		background-color: #1e1f26;
 		display: grid;
 		grid-column: 3/4;
 		grid-row: 1/2;
@@ -770,21 +930,24 @@ body{
 		z-index: 110;
 		clip-path: polygon(31% 50%, 31% 60%, 88% 50%, 31% 40%, 44% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 0%, 45% 0%, 31% 40%);
 	}
-	.div-containerUpperSectionRender_header_div_div-circleCut{
-		width: 100%;
-		height: 100%;
-		background-color: #000;
-		transform: rotate(180deg);
-		display: grid;
-		grid-column: 1/2;
-		grid-row: 1/2;
-		position: relative;
-		z-index: 110;
-		clip-path: polygon(31% 50%, 31% 60%, 88% 50%, 31% 40%, 44% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 0%, 45% 0%, 31% 40%);
-		
+}
+@keyframes degradadoDeColor{
+	20%{
+		background-color: #4e4c6b;/**/
+	}
+	40%{
+		background-color: #8a87a9;
+	}
+	60%{
+		background-colo: #aaaaca;/*#6c6889*/
+	}
+	80%{
+		backgroundu-color: #8a87a9;
+	}
+	100%{
+		background-color: #aaaaca;/**/
 	}
 }
-
 @keyframes movimientoDeCubo{
 	0.3%{
 		background-image: url(cubo/0001.png);
@@ -835,7 +998,7 @@ body{
 		background-size: contain;
 	}
 	4.3%{
-		background-image: url(cubo/00013.png);
+		background-image: url(cubo/0013.png);
 		background-size: contain;
 	}
 	4.6%{
@@ -1527,7 +1690,7 @@ body{
 		background-size: contain;
 	}
 	61.9%{
-		background-image: url(cubo/085.png);
+		background-image: url(cubo/0185.png);
 		background-size: contain;
 	}
 	62.3%{
@@ -2671,6 +2834,27 @@ div-containerContent_div_h4-positionTheTitleTheArticles{
 	align-content: center;
 	overflow: scroll;
 	overflow: hidden;
+}
+@media screen and (min-width: 0) and (max-width: 370px){
+	.div_footer-lowerSection{
+	        grid-template-columns: 1% 98% 1%;
+	        grid-template-rows: 49% 2% 49%;
+	}
+
+	.div_footer_div-firstSection{         /*agrandar un poco mas el espacion de firstSection con media querys*/
+		display: grid;
+		grid-column: 2/3;
+		grid-row: 1/2;
+	}
+	.div_footer_div-secondSection{
+		display: grid;
+		grid-column: 1/4;
+		grid-row: 3/4;
+	}
+	.div_footer_div_div_p-namePage{
+		display: grid;
+		justify-content: start;
+	}
 }
 /*
 .div_footer-lowerSection h6{
